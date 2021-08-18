@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page" />
+    <title>Научно-образовательная конференция по стандартизации и НСИ</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon/logo.png" type="image/x-icon">
+    <!-- /Favicon -->
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- / STYLE -->
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- / Swiper -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+    <script src="search_control_ppo.js" type="text/javascript"></script>
+</head>
+<body>
+    <header class="section-outer section-header">
+        <div class="section-inner section-inner-wide">
+            <div class="main-navigation">
+                <h1 class="logo">
+                    <a href="index.html" class="logo-link" aria-label="Logo"><span>Я</span>ндекс Праздник</a>
+                </h1>
+                <div class="main-navigation__inner-wrap">
+                    <nav class="nav">
+                        <ul class="nav-wrapper">
+                            <li class="nav-wrapper__item">
+                                <a href="#games" class="nav-wrapper__item-link">Подобрать развличения</a>
+                            </li>
+                            <li class="nav-wrapper__item">
+                                <a href="#gifts" class="nav-wrapper__item-link">Подарки</a>
+                            </li>
+                            <li class="nav-wrapper__item">
+                                <a href="#music" class="nav-wrapper__item-link">Подобрать Музыку</a>
+                            </li>
+                            <li class="nav-wrapper__item">
+                                <a href="#dekor" class="nav-wrapper__item-link">Конструктор декора</a>
+                            </li>
+                            <li class="nav-wrapper__item">
+                                <a href="#" class="nav-wrapper__item-link">Моя подборка</a>
+                            </li>
+                            <li class="nav-wrapper__item">
+                                <a href="#art-studios" class="nav-wrapper__item-link">Event - студии</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- hero-image -->
+        <section class="section-outer section-hero-image">
+            <div class="slide-image">
+                <div class="section-inner">
+                    <div class="hero-image-main">
+                        <div class="hero-image-main-wrapper">
+                            <div class="hero-image-main-wrapper__top">
+                                <h2><span>Я</span>ндекс Праздник - это новый формат организации праздников, подбор музыки, декор помещения, подбор развличений и подарков</h2>
+                                <div class="text">Пространство, где идеи становятся событиями</div>
+                            </div>
+                            <div class="hero-image-main-wrapper__botton">
+                                <h3>Кому подойдет данный сервис</h3>
+                                <ul class="hero-image-main-wrapper__botton-wrap">
+                                    <li class="hero-image-main-wrapper__botton-wrap__item">
+                                        <img src="img/1.svg" alt="">
+                                        День рождения
+                                    </li>
+                                    <li class="hero-image-main-wrapper__botton-wrap__item">
+                                        <img src="img/1.svg" alt="">
+                                        Вечеринка
+                                    </li>
+                                    <li class="hero-image-main-wrapper__botton-wrap__item">
+                                        <img src="img/1.svg" alt="">
+                                        Корпаротив
+                                    </li>
+                                    <li class="hero-image-main-wrapper__botton-wrap__item">
+                                        <img src="img/1.svg" alt="">
+                                        Новый год
+                                    </li>
+                                    <li class="hero-image-main-wrapper__botton-wrap__item">
+                                        <img src="img/1.svg" alt="">
+                                        Детский праздник
+                                    </li>
+                                    <li class="hero-image-main-wrapper__botton-wrap__item">
+                                        <img src="img/1.svg" alt="">
+                                        Праздник
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / hero-image -->
+
+         <!-- Подобрать развличения -->
+         <div id="games"></div>
+         <section class="section-outer section-games">
+             <div class="section-inner section-inner-games">
+                 <div class="section-games-list">
+                     <h2 class="ta-c">Подобрать развличение</h2>
+                     <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="cardgifts swiper-wrapper__content" data-id="000">
+                                <img src="img/games/салют.png" alt="" class="item-img product-gifts">
+                                <div class="text-title ta-c item-title-gifts">Салют</div>
+                                <div class="text item-text-gifts">Пра́здничный салю́т — по особо торжественным праздникам</div>
+                                <a href="https://market.yandex.ru/catalog--feierverki/18071689/list?clid=703&cpa=0&onstock=1&hid=215930&local-offers-first=0" target="_blank" class="swiper-wrapper__content-link btn">Купить в Яндекс <span>Маркете</span></a>
+                                <button data-gifts type="button" class="btn btn-success">Добавить</button>
+                            </div>
+                            <div class="cardgifts swiper-wrapper__content" data-id="0001">
+                                <img src="img/games/караоке.jpeg" class="item-img product-gifts" alt="">
+                                <div class="text-title ta-c item-title-gifts">Караоке</div>
+                                <div class="text item-text-gifts">Отличный способ поднять себе настроение или повеселиться в компании раскованных людей.</div>
+                                <a href="https://vkaraoke.pro/online/" target="_blank" class="swiper-wrapper__content-link btn">Перейти в режим караоке</a>
+                                <button data-gifts type="button" class="btn btn-success">Добавить</button>
+                            </div>
+                            <div class="cardgifts swiper-wrapper__content" data-id="0002">
+                                <img src="img/games/мелодия.jpg" alt="" class="item-img product-gifts">
+                                <div class="text-title ta-c item-title-gifts">Угадай мелодию</div>
+                                <div class="text item-text-gifts">Ведущий проигрывает выбранную им мелодию до тех пор, пока ее не отгадают</div>
+                                <button data-gifts type="button" class="btn btn-success">Добавить</button>
+                             </div>
+                             <div class="cardgifts swiper-wrapper__content" data-id="0003">
+                                <img src="img/games/праздник.jpg" alt="" class="item-img product-gifts">
+                                <div class="text-title ta-c item-title-gifts">Поздравляю</div>
+                                <div class="text item-text-gifts">Этот конкурс подойдет для торжества по случаю дня рождения. О музыкальном сопровождении надо позаботиться заранее.</div>
+                                <button data-gifts type="button" class="btn btn-success">Добавить</button>
+                             </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="cardgifts swiper-wrapper__content" data-id="0004">
+                                <img src="img/games/шашки.jpg" alt="" class="item-img product-gifts">
+                                <div class="text-title ta-c item-title-gifts">Пьяные шашки</div>
+                                <div class="text item-text-gifts">По сути, это настоящая игра в шашки, только на шашечную доску выставляются рюмки с крепким напитком (водка, коньяк) и красным вином</div>
+                                <button data-gifts type="button" class="btn btn-success">Добавить</button>
+                             </div>
+                             <div class="cardgifts swiper-wrapper__content" data-id="0005">
+                                <img src="img/games/настолки.jpg" alt="" class="item-img product-gifts">
+                                <div class="text-title ta-c item-title-gifts">Настольные игры для вечеринок</div>
+                                <div class="text item-text-gifts">Лучшие настольные игры для вечеринок взрослых прогонят мрачные мысли</div>
+                                <a href="https://market.yandex.ru/catalog--nastolnye-igry/59742/list?text=%D0%9D%D0%B0%D1%81%D1%82%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%B8%D0%B3%D1%80%D1%8B&hid=10682647&clid=1603&utm_source=google&utm_medium=search&utm_campaign=gp_cat_dp_dety_nastolnye_igry_sgb_search_rus%7C10682647&utm_term=10682647%7C7569&utm_content=cid%3A13883920256%7Cgid%3A130064881132%7Caid%3A536685400250%7Cph%3Akwd-324645822851%7Cpt%3A%7Cpn%3A%7Csrc%3A%7Cst%3Ag&cpa=1&onstock=0&local-offers-first=0" target="_blank" class="swiper-wrapper__content-link btn">Купить в Яндекс <span>Маркете</span></a>
+                                <button data-gifts type="button" class="btn btn-success">Добавить</button> 
+                            </div>
+                             <div class="cardgifts swiper-wrapper__content" data-id="0006">
+                                <img src="img/games/хэллоуин.jpeg" alt="" class="item-img product-gifts">
+                                <div class="text-title ta-c item-title-gifts">Жуткая угадайка</div>
+                                <div class="text item-text-gifts">Если вы хотите организовать вечеринку для Хэллоуина, то эта забава поможет рассмешить и даже чуточку напугать гостей.</div>
+                                <button data-gifts type="button" class="btn btn-success">Добавить</button>
+                             </div>
+                             <div class="cardgifts swiper-wrapper__content" data-id="0007">
+                                <img src="img/games/я никогда не.jpg" alt="" class="item-img product-gifts">
+                                <div class="text-title ta-c item-title-gifts">Я никогда не ...</div>
+                                <div class="text item-text-gifts">Все участники по очереди говорят, чего ни разу не делали, начиная фразу словами «Я никогда не…». Если кому-то из игроков доводилось совершать данное действие, он выпивает</div>
+                                <button data-gifts type="button" class="btn btn-success">Добавить</button>
+                             </div>
+                          </div>
+                      </div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                 </div>
+             </div>
+         </section>
+         <!-- / Подобрать развличения -->
+         <!-- Подарки -->
+         <div id="gifts"></div>
+         <section class="section-outer section-gifts">
+             <div class="section-inner">
+                 <div class="section-gifts-list">
+                    <h2 class="ta-c">Подарки для праздника</h2>
+                     <ul class="section-gifts-list-wrap">
+                         <li class="section-gifts-list-wrap__item">
+                             <img src="img/gifts/plus.png" alt="">
+                             <div class="text-title">Плюс в подарок на праздник и просто так</div>
+                             <button class="btn">Купить Сертификат</button>
+                         </li>
+                         <li class="section-gifts-list-wrap__item">
+                             <img src="img/gifts/market.jpg" alt="">
+                             <div class="text-title">Яндекс.Маркет теперь помогает выбрать подходящий подарок</div>
+                             <button class="btn">Перейти в магазин</button>
+                         </li>
+                         <li class="section-gifts-list-wrap__item">
+                             <img src="img/gifts/yandex.jpg" alt="">
+                             <div class="text-title">Яндекс Станция, умная колонка с Алисой</div>
+                             <button class="btn">Купить Станцию</button>
+                         </li>
+                     </ul>
+                     <div class="text">
+                        Если вы хотите порадовать близкого человека, вызвать у него массу положительных эмоций – покупайте оригинальные подарки через наш сервис.
+                     </div>
+                 </div>
+             </div>
+         </section>
+         <!-- / Подарки -->
+
+        <!-- Подобрать музыку -->
+        <div id="music"></div>
+        <section class="section-outer section-music">
+            <div class="section-inner">
+                <div class="music">
+                    <h2>Подобрать музыка для праздника</h2>
+                    <div class="music-tab">
+                        <h3>Жанры:</h3>
+                        <button class="tablinks" onclick="openCity(event, 'rep')">Рэп и хип хоп</button>
+                        <button class="tablinks" onclick="openCity(event, 'rok')">Рок</button>
+                        <button class="tablinks" onclick="openCity(event, 'trans')">Танцевальная</button>
+                        <button class="tablinks" onclick="openCity(event, 'rb')">R&B</button>
+                        <button class="tablinks" onclick="openCity(event, 'estrada')">Эстрада</button>
+                        <button class="tablinks" onclick="openCity(event, 'musicl')">Лёгкая музыка</button>
+                        <button class="tablinks" onclick="openCity(event, 'pop')">Поп</button>
+                        <button class="tablinks" onclick="openCity(event, 'shanson')">Шансон</button>
+                      </div>
+                      
+                      <div id="rep" class="music-content tabcontent">
+                        <div class="card" data-id="01">
+                                <h4 class="item-title">Пустите меня на танцпол <span>HammAli & Navai</span></h4>
+                                <audio controls preload="auto" src="./music/rep/HammAli_Navai_-_Pustite_menya_na_tancpol_54422844.mp3" class="product-audio"></audio>
+                            <div class="card-body">               
+                                <button data-cart type="button" class="btn">Добавить</button>
+                            </div>
+                        </div>  
+                        <div class="card" data-id="02">
+                            <h4 class="item-title">Сияй - <span>Ramil</span></h4>
+                            <audio controls preload="auto" src="./music/rep/Ramil_-_Siyajj_70551355.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div> 
+                    <div class="card" data-id="03">
+                        <h4 class="item-title">Жить в кайф - <span>Макс Корж</span></h4>
+                        <audio controls preload="auto" src="./music/rep/Maks_Korzh_-_ZHit_v_kajjf_47828991.mp3" class="product-audio"></audio>
+                    <div class="card-body">               
+                        <button data-cart type="button" class="btn">Добавить</button>
+                    </div>
+                    </div> 
+                    <div class="card" data-id="04">
+                        <h4 class="item-title">Малый повзрослел - <span>Макс Корж</span></h4>
+                        <audio controls preload="auto" src="./music/rep/Maks_Korzh_-_Malyjj_povzroslel_48615996.mp3" class="product-audio"></audio>
+                    <div class="card-body">               
+                        <button data-cart type="button" class="btn">Добавить</button>
+                    </div>
+                    </div> 
+                    <div class="card" data-id="05">
+                        <h4 class="item-title">Выпускной -<span>Баста</span></h4>
+                        <audio controls preload="auto" src="./music/rep/Баста - Выпускной (Медлячок).mp3" class="product-audio"></audio>
+                    <div class="card-body">               
+                        <button data-cart type="button" class="btn">Добавить</button>
+                    </div>
+                    </div> 
+                    <div class="card" data-id="06">
+                        <h4 class="item-title">Мокрые кросы<span> Тима Белорусских</span></h4>
+                        <audio controls preload="auto" src="./music/rep/Tima_Belorusskikh_-_Mokrye_krossy_58394454.mp3" class="product-audio"></audio>
+                    <div class="card-body">               
+                        <button data-cart type="button" class="btn">Добавить</button>
+                    </div>
+                    </div> 
+                    <div class="card" data-id="07">
+                        <h4 class="item-title">Мокрые кросы <span>Тима Белорусских</span></h4>
+                        <audio controls preload="auto" src="./music/rep/Tima_Belorusskikh_-_Mokrye_krossy_58394454.mp3" class="product-audio"></audio>
+                    <div class="card-body">               
+                        <button data-cart type="button" class="btn">Добавить</button>
+                    </div>
+                    </div> 
+                    <div class="card" data-id="08">
+                        <h4 class="item-title">Комета - <span>Jony</span></h4>
+                        <audio controls preload="auto" src="./music/rep/Jony - Комета (megapesni.com).mp3" class="product-audio"></audio>
+                    <div class="card-body">               
+                        <button data-cart type="button" class="btn">Добавить</button>
+                    </div>
+                    </div>
+                    <div class="card" data-id="09">
+                        <h4 class="item-title">Cadillac - <span>Morgenshtern</span></h4>
+                        <audio controls preload="auto" src="./music/rep/morgenshtern_-_Cadillac_69879159.mp3" class="product-audio"></audio>
+                    <div class="card-body">               
+                        <button data-cart type="button" class="btn">Добавить</button>
+                    </div>
+                    </div>
+                    <div class="card" data-id="10">
+                        <h4 class="item-title">Panda - <span>Cygo</span></h4>
+                        <audio controls preload="auto" src="./music/rep/CYGO_-_Panda_E_57427639.mp3" class="product-audio"></audio>
+                    <div class="card-body">               
+                        <button data-cart type="button" class="btn">Добавить</button>
+                    </div>
+                    </div>
+                      </div>
+                      
+                      <div id="rok" class="music-content tabcontent">
+                        <div class="card" data-id="001">
+                            <h4 class="item-title">Still Loving You <span>Scorpions</span></h4>
+                            <audio controls preload="auto" src="./music/rok/Scorpions_-_Still_Loving_You_47954789.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div> 
+                        <div class="card" data-id="002">
+                            <h4 class="item-title">The Show Must Go On <span>Queen</span></h4>
+                            <audio controls preload="auto" src="./music/rok/Queen_-_The_Show_Must_Go_On_47851939.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div> 
+                        <div class="card" data-id="003">
+                            <h4 class="item-title">We Will Rock You <span>Queen</span></h4>
+                            <audio controls preload="auto" src="./music/rok/Queen_-_We_Will_Rock_You_47828511.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div> 
+                        <div class="card" data-id="004">
+                            <h4 class="item-title">It's My Life <span>Bon Jovi</span></h4>
+                            <audio controls preload="auto" src="./music/rok/Bon_Jovi_-_Its_My_Life_47852367.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="005">
+                            <h4 class="item-title">П.М.М.Л. <span>Земфира</span></h4>
+                            <audio controls preload="auto" src="./music/rok/Zemfira_-_PMML_47828818.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="006">
+                            <h4 class="item-title">Last Resort <span>Papa Roach</span></h4>
+                            <audio controls preload="auto" src="./music/rok/Papa_Roach_-_Last_Resort_47872825.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="007">
+                            <h4 class="item-title">Don't Speak <span>No Doubt</span></h4>
+                            <audio controls preload="auto" src="./music/rok/No_Doubt_-_Dont_Speak_47852153.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="008">
+                            <h4 class="item-title">Яблони <span>Ляпис Трубецкой</span></h4>
+                            <audio controls preload="auto" src="./music/rok/Lyapis_Trubeckojj_-_YAbloni_48681135.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="009">
+                            <h4 class="item-title">In The Shadows <span>The Rasmus</span></h4>
+                            <audio controls preload="auto" src="./music/rok/The_Rasmus_-_In_The_Shadows_47894988.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0010">
+                            <h4 class="item-title">The Kids Aren't Alright <span>The Offspring</span></h4>
+                            <audio controls preload="auto" src="./music/rok/The_Offspring_-_The_Kids_Arent_Alright_47992265.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                      </div>
+                      
+                      <div id="trans" class="music-content tabcontent">
+                        <div class="card" data-id="0001">
+                            <h4 class="item-title">Credo <span>Zivert</span></h4>
+                            <audio controls preload="auto" src="./music/taecevalnaya/Zivert_-_Credo_66751495.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0002">
+                            <h4 class="item-title">Dance Monkey <span>Tones and I</span></h4>
+                            <audio controls preload="auto" src="./music/taecevalnaya/Tones_and_I_-_Dance_Monkey_66175914.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0003">
+                            <h4 class="item-title">Rampampam <span>Filatov & Karas, Minelli</span></h4>
+                            <audio controls preload="auto" src="./music/taecevalnaya/Filatov_Karas_Minelli_-_Rampampam_72958625.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0004">
+                            <h4 class="item-title">Возьми моё сердце <span>Burito, Filatov & Karas</span></h4>
+                            <audio controls preload="auto" src="./music/taecevalnaya/Burito_Filatov_Karas_-_Vozmi_mojo_serdce_65347839.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0005">
+                            <h4 class="item-title">Мне так хорошо <span>Мари Краймбрери</span></h4>
+                            <audio controls preload="auto" src="./music/taecevalnaya/Mari_Krajjmbreri_-_Mne_tak_khorosho_65738008.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0006">
+                            <h4 class="item-title">Цвет настроения синий <span>Филипп Киркоров</span></h4>
+                            <audio controls preload="auto" src="./music/taecevalnaya/ilipp_Kirkorov_-_Cvet_nastroeniya_sinijj_54571435.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0007">
+                            <h4 class="item-title">Алиса <span>Filatov & Karas</span></h4>
+                            <audio controls preload="auto" src="./music/taecevalnaya/Filatov_Karas_-_Alisa_57024050.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0008">
+                            <h4 class="item-title">Poker Face <span>Lady Gaga</span></h4>
+                            <audio controls preload="auto" src="./music/taecevalnaya/Lady_Gaga_-_Poker_Face_47836180.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0009">
+                            <h4 class="item-title">Skibidi <span>Little Big</span></h4>
+                            <audio controls preload="auto" src="./music/taecevalnaya/Little_Big_-_Skibidi_59449712.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00010">
+                            <h4 class="item-title">How You Remind Me <span>Nickelback</span></h4>
+                            <audio controls preload="auto" src="./music/taecevalnaya/Nickelback_-_How_You_Remind_Me_48075185.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                      </div>
+                      
+                      <div id="rb" class="music-content tabcontent">
+                        <div class="card" data-id="00001">
+                            <h4 class="item-title">Umbrella <span>Rihanna</span></h4>
+                            <audio controls preload="auto" src="./music/r&b/Rihanna_-_Umbrella_47997800.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00002">
+                            <h4 class="item-title">Blinding Lights <span>The Weeknd</span></h4>
+                            <audio controls preload="auto" src="./music/r&b/The_Weeknd_-_Blinding_Lights_67509023.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00003">
+                            <h4 class="item-title">Sexy Bitch <span>David Guetta, Akon</span></h4>
+                            <audio controls preload="auto" src="./music/r&b/David_Guetta_Akon_-_Sexy_Bitch_48381165.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00004">
+                            <h4 class="item-title">Daddy Cool <span>Boney M.</span></h4>
+                            <audio controls preload="auto" src="./music/r&b/Boney_M_-_Daddy_Cool_47966571.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00005">
+                            <h4 class="item-title">Happy <span>Pharrell Williams</span></h4>
+                            <audio controls preload="auto" src="./music/r&b/Pharrell_Williams_-_Happy_47923895.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00006">
+                            <h4 class="item-title">Pump It <span>The Black Eyed Peas</span></h4>
+                            <audio controls preload="auto" src="./music/r&b/The_Black_Eyed_Peas_-_Pump_It_47924612.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00007">
+                            <h4 class="item-title">Ayo Technology <span>Justin Timberlake, 50 Cent</span></h4>
+                            <audio controls preload="auto" src="./music/r&b/Justin_Timberlake_50_Cent_Timbaland_-_Ayo_Technology_47965603.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00008">
+                            <h4 class="item-title">Yeah! <span>Usher</span></h4>
+                            <audio controls preload="auto" src="./music/r&b/Usher_-_Yeah_47924105.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00009">
+                            <h4 class="item-title">Whistle <span>Flo Rida</span></h4>
+                            <audio controls preload="auto" src="./music/r&b/Flo_Rida_-_Whistle_48002591.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000010">
+                            <h4 class="item-title">Let's Get It Started <span>The Black Eyed Peas</span></h4>
+                            <audio controls preload="auto" src="./music/r&b/The_Black_Eyed_Peas_-_Lets_Get_It_Started_47997819.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                      </div>
+                      
+                      <div id="estrada" class="music-content tabcontent">
+                        <div class="card" data-id="000001">
+                            <h4 class="item-title">Sarà perché ti amo <span>Ricchi E Pover</span></h4>
+                            <audio controls preload="auto" src="./music/bandstand/Ricchi_E_Poveri_-_Sar_perch_ti_amo_48689644.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000002">
+                            <h4 class="item-title">Ориентация север <span>Лолита</span></h4>
+                            <audio controls preload="auto" src="./music/bandstand/lolita-orientacija-sever_456370722.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000003">
+                            <h4 class="item-title">Ибица <span>Филипп Киркоров, Николаи Басков</span></h4>
+                            <audio controls preload="auto" src="./music/bandstand/1532772123_filipp-kirkorov-nikolaj-baskov-ibica.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000004">
+                            <h4 class="item-title">На Титанике <span>Лолита </span></h4>
+                            <audio controls preload="auto" src="./music/bandstand/1518775157_76-lolita-na-titanik-ru-tv.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000005">
+                            <h4 class="item-title">Я счастливый <span>Григорий Лепс</span></h4>
+                            <audio controls preload="auto" src="./music/bandstand/leps-grigorij-ja-schastlivyj_456512811.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000006">
+                            <h4 class="item-title">Это здорово <span>Николай Носков</span></h4>
+                            <audio controls preload="auto" src="./music/bandstand/1592146940_nikolay-noskov-eto-zdorovo.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000007">
+                            <h4 class="item-title">Миллион алых роз <span>Алла Пугачёва</span></h4>
+                            <audio controls preload="auto" src="./music/bandstand/1582735858_alla-pugacheva-million-alyh-roz.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000008">
+                            <h4 class="item-title">Электричка <span>Алёна Апина</span></h4>
+                            <audio controls preload="auto" src="./music/bandstand/alena-apina-jelektrichka_456295748.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000009">
+                            <h4 class="item-title">Зеленоглазое Такси <span>Михаил Боярский</span></h4>
+                            <audio controls preload="auto" src="./music/bandstand/1538420680_mikhail_boyarskiy_-_zelenoglazoe_taksi.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0000010">
+                            <h4 class="item-title">Дым Сигарет С Ментолом <span>Нэнси </span></h4>
+                            <audio controls preload="auto" src="./music/bandstand/1520068382_-dym-sigaret-s-mentolom.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                      </div>
+    
+                      <div id="musicl" class="music-content tabcontent">
+                        <div class="card" data-id="0000001">
+                            <h4 class="item-title">Sadeness - Part I <span>Enigma</span></h4>
+                            <audio controls preload="auto" src="./music/easy/Enigma_-_Sadeness_-_Part_I_47959957.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0000002">
+                            <h4 class="item-title">On Top of the World <span>Imagine Dragons</span></h4>
+                            <audio controls preload="auto" src="./music/easy/Enigma_-_Sadeness_-_Part_I_47959957.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0000003">
+                            <h4 class="item-title">Forever in Love <span>Kenny G</span></h4>
+                            <audio controls preload="auto" src="./music/easy/Kenny_G_-_Forever_in_Love_48102926.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0000004">
+                            <h4 class="item-title">Boadicea <span>Enya</span></h4>
+                            <audio controls preload="auto" src="./music/easy/Enya_-_Boadicea_48028362.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0000005">
+                            <h4 class="item-title">Fur Elise <span>ditation, Relaxing Music, Relax, Людвиг ван Бетховен</span></h4>
+                            <audio controls preload="auto" src="./music/easy/Classical_Study_Music_Meditation_Relaxing_Music_Relax_Lyudvig_van_Betkhoven_-_Fur_Elise_48242143.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0000006">
+                            <h4 class="item-title">Mamy Blue <span>Paul Mauriat, Paul Mauriat</span></h4>
+                            <audio controls preload="auto" src="./music/easy/Paul_Mauriat_Paul_Mauriat_And_His_Orchestra_-_Mamy_Blue_48566342.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0000007">
+                            <h4 class="item-title">Arcade <span>Duncan Laurence</span></h4>
+                            <audio controls preload="auto" src="./music/easy/Duncan_Laurence_-_Arcade_64378249.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0000008">
+                            <h4 class="item-title">Can't Help Falling In Love <span>Chris Isaak</span></h4>
+                            <audio controls preload="auto" src="./music/easy/Chris_Isaak_-_Cant_Help_Falling_In_Love_54966223.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0000009">
+                            <h4 class="item-title">El Bimbo <span>Paul Mauriat</span></h4>
+                            <audio controls preload="auto" src="./music/easy/Paul_Mauriat_-_El_Bimbo_48180749.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00000010">
+                            <h4 class="item-title">I'm a Fool to Want You <span>Frank Sinatra, Ray Charles</span></h4>
+                            <audio controls preload="auto" src="./music/easy/Frank_Sinatra_Ray_Charles_Axel_Stordahl_-_Im_a_Fool_to_Want_You_57645079.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                      </div>
+    
+                      <div id="pop" class="music-content tabcontent">
+                        <div class="card" data-id="00000001">
+                            <h4 class="item-title">Don't Be So Shy <span>Imany</span></h4>
+                            <audio controls preload="auto" src="./music/pop/Imany_-_Dont_Be_So_Shy_47911960.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00000002">
+                            <h4 class="item-title">Грустный дэнс <span>Artik & Asti, Артём Качер</span></h4>
+                            <audio controls preload="auto" src="./music/pop/Artik_Asti_Artjom_Kacher_-_Grustnyjj_djens_62147909.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00000003">
+                            <h4 class="item-title">До встречи на танцполе <span>GAYAZOV$ BROTHER$</span></h4>
+                            <audio controls preload="auto" src="./music/pop/GAYAZOV_BROTHER_-_Do_vstrechi_na_tancpole_61980069.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00000004">
+                            <h4 class="item-title">Thunder <span>Imagine Dragons</span></h4>
+                            <audio controls preload="auto" src="./music/pop/Imagine_Dragons_-_Thunder_47828258.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00000005">
+                            <h4 class="item-title">Кружит <span>MONATIK</span></h4>
+                            <audio controls preload="auto" src="./music/pop/MONATIK_-_Kruzhit_47828407.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00000006">
+                            <h4 class="item-title">Неделимы <span>Artik & Asti</span></h4>
+                            <audio controls preload="auto" src="./music/pop/Artik_Asti_-_Nedelimy_47828395.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00000007">
+                            <h4 class="item-title">Bring Me To Life <span>Evanescence</span></h4>
+                            <audio controls preload="auto" src="./music/pop/Evanescence_-_Bring_Me_To_Life_47885099.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00000008">
+                            <h4 class="item-title">Верная <span>Слава</span></h4>
+                            <audio controls preload="auto" src="./music/pop/Slava_-_Vernaya_54451410.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="00000009">
+                            <h4 class="item-title">Siren Song <span>MARUV</span></h4>
+                            <audio controls preload="auto" src="./music/pop/MARUV_-_Siren_Song_62108120.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000000010">
+                            <h4 class="item-title">Туманы <span>Макс Барских</span></h4>
+                            <audio controls preload="auto" src="./music/pop/Maks_Barskikh_-_Tumany_47828440.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                      </div>
+    
+                      <div id="shanson" class="music-content tabcontent">
+                        <div class="card" data-id="000000001">
+                            <h4 class="item-title">Я поднимаю руки <span>Григорий Лепс</span></h4>
+                            <audio controls preload="auto" src="./music/shanson/Grigorijj_Leps_-_YA_podnimayu_ruki_48214031.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000000002">
+                            <h4 class="item-title">Там <span>Стас Михайлов</span></h4>
+                            <audio controls preload="auto" src="./music/shanson/Stas_Mikhajjlov_-_Tam_47829004.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000000003">
+                            <h4 class="item-title">Я жду <span>Ирина Круг</span></h4>
+                            <audio controls preload="auto" src="./music/shanson/Irina_Krug_-_YA_zhdu_50279381.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000000004">
+                            <h4 class="item-title">Дальнобойная <span>Сергей Трофимов</span></h4>
+                            <audio controls preload="auto" src="./music/shanson/Sergejj_Trofimov_-_Dalnobojjnaya_48115201.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000000005">
+                            <h4 class="item-title">Я куплю тебе дом <span>Лесоповал</span></h4>
+                            <audio controls preload="auto" src="./music/shanson/Lesopoval_-_YA_kuplyu_tebe_dom_48203169.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000000006">
+                            <h4 class="item-title">Пой, гитара <span>Иван Кучин</span></h4>
+                            <audio controls preload="auto" src="./music/shanson/Ivan_Kuchin_-_Pojj_gitara_48655678.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000000007">
+                            <h4 class="item-title">Роман <span>Ирина Круг</span></h4>
+                            <audio controls preload="auto" src="./music/shanson/Irina_Krug_-_Roman_59727196.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000000008">
+                            <h4 class="item-title">Натали <span>Григорий Лепс</span></h4>
+                            <audio controls preload="auto" src="./music/shanson/Grigorijj_Leps_-_Natali_53297577.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="000000009">
+                            <h4 class="item-title">Ну, вот и всё <span>Стас Михайлов</span></h4>
+                            <audio controls preload="auto" src="./music/shanson/Stas_Mikhajjlov_-_Nu_vot_i_vsjo_47829006.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                        <div class="card" data-id="0000000010">
+                            <h4 class="item-title">Скрипач <span>Руслан Хибиртов</span></h4>
+                            <audio controls preload="auto" src="./music/shanson/Ruslan_KHibirtov_-_Skripach_66440651.mp3" class="product-audio"></audio>
+                        <div class="card-body">               
+                            <button data-cart type="button" class="btn">Добавить</button>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="text">* Выберите жанр, а потом нажмите на кнопку добать на понравившися вам трэк</div>
+                </div>
+            </div>
+        </section>
+        <!-- / Подобрать музыку -->
+
+        <!-- Декор -->
+        <div id="dekor"></div>
+        <section class="section-outer section-decor">
+            <div class="section-inner">
+                <div class="section-decor-image">
+                    <div class="cardimg" data-id="0">
+                            <h4 class="item-title-img">Оформление помещения</h4>
+                            <img src="./img/decor/1.jpg" class="product-img" width="700px">
+                            <div class="card-body">               
+                                <button data-img type="button" class="btn">Добавить</button>
+                            </div>
+                        </div>
+                        <div class="section-decor-image__right">
+                            <div class="card-wrapper">
+                                <div class="card-item" data-id="02">
+                                    <div class="card-item__top">
+                                        <div class="card-item__img"></div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="wrapper-img">
+                                <div class="card-item-img" data-id="0">
+                                    <div class="card-item__top-img">
+                                        <div class="card-item__image"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wrapper-gifts">
+                                <div class="card-item-gifts" data-id="000">
+                                    <div class="card-item__top-gifts">
+                                        <div class="card-gifts"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <!-- / Декор -->
+
+        <!-- Мои подборки -->
+        <div id="art-studios"></div>
+        <section class="section-outer section-save">
+            <div class="section-inner">
+                text
+            </div>
+        </section>
+        <!-- / Мои подборки -->
+
+        <!-- Event - студии -->
+        <div id="event-studios"></div>
+        <section class="section-outer section-event">
+            <div class="section-inner">
+                <div class="section-event-list">
+                    <h2>Сертифицированные агентства и Event - студии</h2>
+                    <div class="text">
+                        На этой странице собраны сертифицированные компании-партнёры Яндекс.Праздников. К ним можно обратиться для организации праздника любой сложнности. 
+                        Подробнее о <a href="#" class="section-event-list__link">сертификации</a>.
+                    </div>
+                    <div class="list-wrapper">
+                        <div class="list-wrapper__left">
+                            <div class="text-title">Event - студии
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <div class="list-wrapper__right">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4914d62efb0977ffd6220439cd441f1a5be787feddd871db797e8910f54044bb&amp;source=constructor" width="758" height="550" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / Event - студии -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="section-outer section-footer">
+        <div class="section-inner">
+            text
+        </div>
+    </footer>
+    <!-- / Footer -->
+    <script src="/js/card-img.js"></script>
+    <script src="/js/card-music.js"></script>
+    <script src="./js/tab.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/cart-gifts.js"></script>
+</body>
+</html>
