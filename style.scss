@@ -553,11 +553,68 @@ h1 {
     &__link {
         text-decoration: none;
         font-size: $fs-m;
-        color: rgb(129, 156, 248);
+        color: rgb(167, 183, 238);
+    }
+
+    .modal {
+        display: none;
+
+        &-bg {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        &-body {
+            text-align: justify;
+            position: fixed;
+            top: 100px;
+            bottom: auto;
+            left: 20%;
+            right: 20%;
+            color: $color-black;
+            background-color: $color-secondary;
+
+            h3 {
+                padding-top: $base * 3;
+                padding-bottom: $base * 3;
+                font-size: $fs-l;
+                text-align: center;
+            }
+
+            p {
+                font-weight: $fw-regular;
+                padding: 0 $base*7;
+            }
+
+            .close {
+                position: absolute;
+                top: 0.5em;
+                right: 0.5em;
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+                text-indent: 100px;
+                overflow: hidden;
+                border: none;
+                background-color: $color-secondary;
+
+                &::before {
+                    position: absolute;
+                    content: '\2716';
+                    text-indent: 0;
+                    color: red;
+                    left: 0;
+                }
+            }
+        }
     }
     
     h2 {
-        font-size: $fs-xl;
+        font-size: $base * 11;
         font-weight: $fw-black;
         text-align: center;
     }
@@ -574,6 +631,8 @@ h1 {
 
         &__left {
             flex-basis: 35%;
+            height: 550px;
+            overflow: auto;
 
             .text-title {
                 text-align: center;
@@ -585,6 +644,36 @@ h1 {
                     margin-left: 40%;
                     width: 20%;
                     border: 1px solid;
+                    color: rgb(75, 130, 233);
+                }
+            }
+
+            .event {
+                margin-top: $base * 2;
+                border: 1px solid #333C72;
+                background-color: $color-secondary;
+                color: $color-black;
+                padding: $base*2 $base;
+
+                &-title {
+                    font-size: $fs-m;
+                    color: rgb(6, 6, 100);
+
+                    span {
+                        background-color: green;
+                        color: $color-secondary;
+                        padding: 0 $base;
+                    }
+                }
+
+                &-text {
+                    font-size: $fs-s;
+                    font-weight: $fw-regular;
+                }
+
+                &-adres {
+                    font-size: $fs-s;
+                    font-weight: $fw-light;
                 }
             }
         }
@@ -594,7 +683,7 @@ h1 {
             margin: 0;
 
             iframe {
-                border-radius: $base * 2;
+                border-radius: 0 $base * 2 $base * 2 0;
             }
         }
     }

@@ -874,12 +874,77 @@
                     <h2>Сертифицированные агентства и Event - студии</h2>
                     <div class="text">
                         На этой странице собраны сертифицированные компании-партнёры Яндекс.Праздников. К ним можно обратиться для организации праздника любой сложнности. 
-                        Подробнее о <a href="#" class="section-event-list__link">сертификации</a>.
+                        Подробнее о <a href="#" class="section-event-list__link" id="open_modal">сертификации</a>.
+
+                        <div class="modal" id="modal">
+                            <div class="modal-bg"></div>
+                            <div class="modal-body">
+                                <button class="close" id="close_modal" title="Закрыть">Закрыть</button>
+                                <h3>Сертификация агентств и веб-студий для создания навыков</h3>
+                                <p>Яндекс.Праздник сертифицируют агентства и Event - студии, чтобы оценить:</p>
+                                <ul>
+                                    <li>качество оказываемых услуг по организации праздников и их проведения;</li>
+                                    <li>общий вклад каждой компании в развитие рынка.</li>
+                                </ul>
+                                <p>Статус сертифицированного партнера свидетельствует о том, что Яндекс считает агентство или Event - студию ценным игроком на рынке и своим 
+                                    бизнес-партнером. Сертифицированные партнеры рекомендуются тем, кто хочет использовать платформу Чндекс Праздник для взаимодействия со своей аудиторией, а 
+                                    также рекомендовать.
+                                </p>
+                                <p>По итогам сертификации вы можете получить статус партнера, успешно подтвердить уже полученный статус, или лишиться его. Яндекс оставляет за собой 
+                                    право отозвать статус сертифицированного партнера в случае несоблюдения пользовательского соглашения, политики Яндекса или законодательства РФ.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="list-wrapper">
                         <div class="list-wrapper__left">
                             <div class="text-title">Event - студии
                                 <div class="line"></div>
+                                <div class="event">
+                                    <div class="event-title">АртЭвентЦентр <span>4.5</span></div>
+                                    <div class="event-text">Продюсерский центр ∙ Праздничное агентство ∙ Театр</div>
+                                    <div class="event-adres">ул. Грибоедова, 3, Пушкино (оф. 1)</div>
+                                </div>
+                                <div class="event">
+                                    <div class="event-title">EventyOn <span>5</span></div>
+                                    <div class="event-text">Праздничное агентство ∙ Конференц-зал ∙ Организация и проведение детских праздников</div>
+                                    <div class="event-adres">Новинский бул., 31, Москва, Россия (этаж 2)</div>
+                                </div>
+                                <div class="event">
+                                    <div class="event-title">Abd: Entertainment <span>4.7</span></div>
+                                    <div class="event-text">Праздничное агентство ∙ Маркетинговые услуги</div>
+                                    <div class="event-adres">ул. Сущёвский Вал, 16, стр. 4, Москва, Россия</div>
+                                </div>
+                                <div class="event">
+                                    <div class="event-title">Event Fiesta <span>4.3</span></div>
+                                    <div class="event-text">Праздничное агентство</div>
+                                    <div class="event-adres">Большая Новодмитровская ул., 36, стр. 2, Москва, Россия</div>
+                                </div>
+                                <div class="event">
+                                    <div class="event-title">The Kitchen Loft <span>4.7</span></div>
+                                    <div class="event-text">Организация конференций и семинаров ∙ Ведущие праздников и мероприятий ∙ Праздничное агентство</div>
+                                    <div class="event-adres">Малая Семёновская ул., 5, стр. 1, Москва, Россия (этаж 4)</div>
+                                </div>
+                                <div class="event">
+                                    <div class="event-title">Fotofaktura  <span>4.7</span></div>
+                                    <div class="event-text">Аренда фотостудий ∙ Праздничное агентство ∙ Организация конференций и семинаров</div>
+                                    <div class="event-adres">ул. Маросейка, 7/8с1, Москва, Россия (эт. 3)</div>
+                                </div>
+                                <div class="event">
+                                    <div class="event-title">Лид'с Ивентхаус  <span>4.2</span></div>
+                                    <div class="event-text">Студия дизайна ∙ Праздничное агентство ∙ Промышленный дизайн</div>
+                                    <div class="event-adres">Боровая ул., 7, стр. 10, Москва, Россия</div>
+                                </div>
+                                <div class="event">
+                                    <div class="event-title">Лофт Л 8  <span>4.8</span></div>
+                                    <div class="event-text">Аренда фотостудий ∙ Фотостудия ∙ Праздничное агентство</div>
+                                    <div class="event-adres">Бережковская наб., 20, стр. 8, Москва, Россия (этаж 2)</div>
+                                </div>
+                                <div class="event">
+                                    <div class="event-title">Студия праздников Pd Event  <span>4.8</span></div>
+                                    <div class="event-text">Праздничное агентство ∙ Организация и проведение детских праздников</div>
+                                    <div class="event-adres">Никитский бул., 8, Москва, Россия</div>
+                                </div>
                             </div>
                         </div>
                         <div class="list-wrapper__right">
@@ -899,6 +964,7 @@
         </div>
     </footer>
     <!-- / Footer -->
+    <script src="./js/modal.js"></script>
     <script src="/js/card-img.js"></script>
     <script src="/js/card-music.js"></script>
     <script src="./js/tab.js"></script>
