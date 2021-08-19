@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Landing page" />
-    <title>Научно-образовательная конференция по стандартизации и НСИ</title>
+    <title>Яндекс Праздник - подбор подарков, музыки и развличений для праздника</title>
     <!-- Favicon -->
     <link rel="icon" href="img/favicon/favicon.png" type="image/x-icon">
     <!-- /Favicon -->
@@ -14,9 +14,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- / STYLE -->
     <!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- / Swiper -->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
@@ -820,43 +818,74 @@
         <div id="dekor"></div>
         <section class="section-outer section-decor">
             <div class="section-inner">
-                <div class="section-decor-image">
-                    <div class="cardimg" data-id="0">
-                            <h4 class="item-title-img">Оформление помещения</h4>
-                            <img src="./img/decor/1.jpg" class="product-img" width="700px">
-                            <div class="card-body">               
-                                <button data-img type="button" class="btn">Добавить</button>
-                            </div>
+                <div class="section-decor-room">
+                    <h2>Конструктор декора помещения</h2>
+                    <div class="section-decor-room__wrap">
+                        <div class="section-decor-room__wrap--left">
+                            <div class="text-title">Выберите элемент декора</div>
+                            <a href="#" class="section-room__wrap--left-link" id="open_sharik">
+                                <img src="img/decor/2.png" class="img-link" alt="">
+                            </a>
+                            <a href="#" class="close-img" id="close_sharik">Убрать</a>
+                            <img src="img/decor/2.png" alt="" width="300" close="sharik" id="sharik">
+
+                            <a href="#" class="section-room__wrap--left-link" id="open_sharik_2">
+                                <img src="img/decor/3.png" alt="">
+                            </a>
+                            <a href="#" class="close-img" id="close_sharik_2">Убрать</a>
+
+                            <a href="#" class="section-room__wrap--left-link" id="open_sharik_3">
+                                <img src="img/decor/3.png" alt="">
+                            </a>
+                            <a href="#" class="close-img" id="close_sharik_3">Убрать</a>
+                            <a href="#" class="section-room__wrap--left-link" id="open_heart">
+                                <img src="img/decor/4.png" alt="">
+                            </a>
+                            <a href="#" class="close-img" id="close_heart">Убрать</a>
+                            
+                            <a href="#" class="section-room__wrap--left-link" id="open_heart_2">
+                                <img src="img/decor/4.png" alt="">
+                            </a>
+                            <a href="#" class="close-img" id="close_heart_2">Убрать</a>
+
+                            <a href="#" class="section-room__wrap--left-link" id="open_flag">
+                                <img src="img/decor/5.png" alt="">
+                            </a>
+                            <a href="#" class="close-img" id="close_flag">Убрать</a>
+
+                            <a href="#" class="section-room__wrap--left-link" id="open_flowers">
+                                <img src="img/decor/6.png" alt="">
+                            </a>
+                            <a href="#" class="close-img" id="close_flowers">Убрать</a>
+
+                            <a href="#" class="section-room__wrap--left-link" id="open_flowers_2">
+                                <img src="img/decor/8.png" alt="">
+                            </a>
+                            <a href="#" class="close-img close-img-decor" id="close_flowers_2">Убрать</a>
+
+                            <a href="#" class="section-room__wrap--left-link" id="open_music">
+                                <img src="img/decor/7.png" class="img-link" alt="">
+                            </a>
+                            <a href="#" class="close-img" id="close_music">Убрать</a>
+                            <img src="img/decor/2.png" alt="" width="300" id="sharik">
+                            <img src="img/decor/3.png" alt="" width="150" id="sharik_2">
+                            <img src="img/decor/3.png" alt="" width="150" id="sharik_3">
+                            <img src="img/decor/4.png" alt="" width="150" id="heart">
+                            <img src="img/decor/4.png" alt="" width="150" id="heart_2">
+                            <img src="img/decor/5.png" alt="" width="190" id="flag">
+                            <img src="img/decor/6.png" alt="" width="100" id="flowers">
+                            <img src="img/decor/8.png" alt="" width="100" id="flowers_2">
+                            <img src="img/decor/7.png" alt="" width="570" id="music_decor">
                         </div>
-                        <div class="section-decor-image__right">
-                            <div class="card-wrapper">
-                                <div class="card-item" data-id="02">
-                                    <div class="card-item__top">
-                                        <div class="card-item__img"></div>
-                                    </div>
-                                </div>
-                            </div>
-            
-                            <div class="wrapper-img">
-                                <div class="card-item-img" data-id="0">
-                                    <div class="card-item__top-img">
-                                        <div class="card-item__image"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="wrapper-gifts">
-                                <div class="card-item-gifts" data-id="000">
-                                    <div class="card-item__top-gifts">
-                                        <div class="card-gifts"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-
+                        <div class="section-decor-room__wrap--right">
+                            <img src="img/decor/1.jpg" alt="" class="section-decor-room__wrap--right-link">
                         </div>
-                    </div>  
-                </div>
+                    </div>
+                    <div class="text">
+                        Простой и удобный конструктор для дизайна интерьера. Онлайн-программа с интуитивным интерфейсом и мощными инструментами. Технология <span>Drag'n'Drop</span> 
+                        позволяет быстро и эффективно визуализировать Ваш интерьер. Планируйте, создавайте дизайн и декорируйте помещения.
+                    </div>
+                </div>  
             </div>
         </section>
         <!-- / Декор -->
@@ -866,6 +895,32 @@
         <section class="section-outer section-save">
             <div class="section-inner">
                 text
+                <div class="section-decor-image__right">
+                    <div class="card-wrapper">
+                        <div class="card-item" data-id="02">
+                            <div class="card-item__top">
+                                <div class="card-item__img"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="wrapper-img">
+                        <div class="card-item-img" data-id="0">
+                            <div class="card-item__top-img">
+                                <div class="card-item__image"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper-gifts">
+                        <div class="card-item-gifts" data-id="000">
+                            <div class="card-item__top-gifts">
+                                <div class="card-gifts"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </section>
         <!-- / Мои подборки -->
@@ -879,27 +934,27 @@
                     <div class="text">
                         На этой странице собраны сертифицированные компании-партнёры Яндекс.Праздников. К ним можно обратиться для организации праздника любой сложнности. 
                         Подробнее о <a href="#" class="section-event-list__link" id="open_modal">сертификации</a>.
-
-                        <div class="modal" id="modal">
-                            <div class="modal-bg"></div>
-                            <div class="modal-body">
-                                <button class="close" id="close_modal" title="Закрыть">Закрыть</button>
-                                <h3>Сертификация агентств и веб-студий для создания навыков</h3>
-                                <p>Яндекс.Праздник сертифицируют агентства и Event - студии, чтобы оценить:</p>
-                                <ul>
-                                    <li>качество оказываемых услуг по организации праздников и их проведения;</li>
-                                    <li>общий вклад каждой компании в развитие рынка.</li>
-                                </ul>
-                                <p>Статус сертифицированного партнера свидетельствует о том, что Яндекс считает агентство или Event - студию ценным игроком на рынке и своим 
-                                    бизнес-партнером. Сертифицированные партнеры рекомендуются тем, кто хочет использовать платформу Чндекс Праздник для взаимодействия со своей аудиторией, а 
-                                    также рекомендовать.
-                                </p>
-                                <p>По итогам сертификации вы можете получить статус партнера, успешно подтвердить уже полученный статус, или лишиться его. Яндекс оставляет за собой 
-                                    право отозвать статус сертифицированного партнера в случае несоблюдения пользовательского соглашения, политики Яндекса или законодательства РФ.
-                                </p>
-                            </div>
+                    </div>
+                    <div class="modal" id="modal">
+                        <div class="modal-bg"></div>
+                        <div class="modal-body">
+                            <button class="close" id="close_modal" title="Закрыть">Закрыть</button>
+                            <h3>Сертификация агентств и Event-студий для организации праздников</h3>
+                            <p>Яндекс.Праздник сертифицируют агентства и Event - студии, чтобы оценить:</p>
+                            <ul>
+                                <li>качество оказываемых услуг по организации праздников и их проведения;</li>
+                                <li>общий вклад каждой компании в развитие рынка.</li>
+                            </ul>
+                            <p>Статус сертифицированного партнера свидетельствует о том, что Яндекс считает агентство или Event - студию ценным игроком на рынке и своим 
+                                бизнес-партнером. Сертифицированные партнеры рекомендуются тем, кто хочет использовать платформу Чндекс Праздник для взаимодействия со своей аудиторией, а 
+                                также рекомендовать.
+                            </p>
+                            <p>По итогам сертификации вы можете получить статус партнера, успешно подтвердить уже полученный статус, или лишиться его. Яндекс оставляет за собой 
+                                право отозвать статус сертифицированного партнера в случае несоблюдения пользовательского соглашения, политики Яндекса или законодательства РФ.
+                            </p>
                         </div>
                     </div>
+
                     <div class="list-wrapper">
                         <div class="list-wrapper__left">
                             <div class="text-title">Event - студии
@@ -985,7 +1040,7 @@
                     <div class="modal" id="modal_prava">
                         <div class="modal-bg"></div>
                         <div class="modal-body">
-                            <button class="close" id="close_prava">Закрыть</button>
+                            <button class="close" id="close_prava" title="Закрыть">Закрыть</button>
                             <h3>Обладатели авторских и смежных прав</h3>
                                 <p>Все композиции, представленные на Яндекс.Празднике, легальны. Они доступны конечному пользователю бесплатно с ограничениями (в веб-версии сервиса)
                                    или по подписке без ограничений (в веб-версии или в приложении Яндекс.Музыки).
@@ -1031,8 +1086,9 @@
         </div>
     </footer>
     <!-- / Footer -->
+    <script src="./js/decor-modal.js"></script>
+    <script src="./js/decor.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="/js/card-img.js"></script>
     <script src="/js/card-music.js"></script>
     <script src="./js/tab.js"></script>
     <script src="./js/swiper.js"></script>

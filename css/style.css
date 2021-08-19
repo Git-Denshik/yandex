@@ -88,7 +88,7 @@ h1 {
   white-space: pre;
 }
 .main-navigation__inner-wrap .nav-wrapper__item-link {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   text-decoration: none;
   color: #F2F2FF;
@@ -408,11 +408,154 @@ h1 {
 .section-decor {
   background: url(/img/decor/music_2.png);
 }
+.section-decor .section-inner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
-.section-decor-image__right .im {
+.section-decor-room {
+  display: flex;
+  flex-direction: column;
+}
+.section-decor-room h2 {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+}
+.section-decor-room .section-decor-room__wrap {
+  display: flex;
+}
+.section-decor-room .section-decor-room__wrap .text-title {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-decor-room .section-decor-room__wrap--left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 20%;
+  height: 560px;
+  overflow-y: scroll;
+}
+.section-decor-room .section-decor-room__wrap--left a {
+  text-decoration: none;
+}
+.section-decor-room .section-decor-room__wrap--left .close-img {
+  width: 56px;
+  height: 24px;
+  margin-left: 20px;
+  margin-bottom: 12px;
+  border: 1px solid #739eee;
+  border-radius: 8px;
+  background-color: rgba(115, 158, 238, 0.25);
+  color: white;
+  cursor: pointer;
+  padding: 16px 8px;
+}
+.section-decor-room .section-decor-room__wrap--left .close-img-decor {
+  height: 28px;
+  padding: 32px 8px;
+}
+.section-decor-room .section-decor-room__wrap--left #close_flag {
+  width: 56px;
+  height: 24px;
+  margin-left: 20px;
+  border: 1px solid #739eee;
+  border-radius: 8px;
+  background-color: rgba(115, 158, 238, 0.25);
+  color: white;
+  cursor: pointer;
+  padding: 2px 8px;
+}
+.section-decor-room .section-decor-room__wrap--left .section-room__wrap--left-link img {
+  width: 40px;
+  border: 1px solid #739eee;
+  border-radius: 8px;
+  padding: 4px 16px;
+  background-color: rgba(115, 158, 238, 0.25);
+}
+.section-decor-room .section-decor-room__wrap--left .section-room__wrap--left-link .img-link {
+  width: 64px;
+  height: 48px;
+  padding: 4px;
+}
+.section-decor-room .section-decor-room__wrap--left #sharik {
+  display: none;
+  cursor: pointer;
   position: absolute;
-  top: 150%;
-  width: 20%;
+  z-index: 1000;
+  left: 50%;
+}
+.section-decor-room .section-decor-room__wrap--left #sharik_2 {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+}
+.section-decor-room .section-decor-room__wrap--left #sharik_3 {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+}
+.section-decor-room .section-decor-room__wrap--left #heart {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+}
+.section-decor-room .section-decor-room__wrap--left #heart_2 {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+}
+.section-decor-room .section-decor-room__wrap--left #flag {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+}
+.section-decor-room .section-decor-room__wrap--left #flowers {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+}
+.section-decor-room .section-decor-room__wrap--left #flowers_2 {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+}
+.section-decor-room .section-decor-room__wrap--left #music_decor {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+}
+.section-decor-room .section-decor-room__wrap--right img {
+  width: 100%;
+  border-radius: 0 4px 4px 0;
+}
+.section-decor-room .text {
+  font-weight: 300;
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 20px;
+}
+.section-decor-room .text span {
+  color: #F6255A;
+  font-weight: 700;
 }
 
 .section-event {
@@ -528,6 +671,7 @@ h1 {
   background-color: green;
   color: #F2F2FF;
   padding: 0 4px;
+  border-radius: 2px;
 }
 .section-event-list .list-wrapper__left .event-text {
   font-size: 14px;
