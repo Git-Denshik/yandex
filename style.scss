@@ -107,7 +107,7 @@ h1 {
     left: 0;
     right: 0;
     background-color: #040B3C;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .main-navigation {
@@ -530,8 +530,8 @@ h1 {
     background: url(/img/decor/music_2.png);
 
     .section-inner {
-        padding-top: $base * 15;
-        padding-bottom: $base * 15;
+        padding-top: $base * 7;
+        padding-bottom: $base * 9;
     }
 }
 
@@ -617,7 +617,7 @@ h1 {
                 display: none;
                 cursor: pointer; 
                 position: absolute; 
-                z-index: 1000; 
+                z-index: 0; 
                 left: 50%;
             }
 
@@ -625,7 +625,7 @@ h1 {
                 display: none;
                 cursor: pointer; 
                 position: absolute; 
-                z-index: 1000; 
+                z-index: 0; 
                 left: 50%;
             }
 
@@ -633,7 +633,7 @@ h1 {
                 display: none;
                 cursor: pointer; 
                 position: absolute; 
-                z-index: 1000; 
+                z-index: 0; 
                 left: 50%;
             }
 
@@ -641,7 +641,7 @@ h1 {
                 display: none;
                 cursor: pointer; 
                 position: absolute; 
-                z-index: 1000; 
+                z-index: 0; 
                 left: 50%;
             }
 
@@ -649,7 +649,7 @@ h1 {
                 display: none;
                 cursor: pointer; 
                 position: absolute; 
-                z-index: 1000; 
+                z-index: 0; 
                 left: 50%;
             }
 
@@ -657,7 +657,7 @@ h1 {
                 display: none;
                 cursor: pointer; 
                 position: absolute; 
-                z-index: 1000; 
+                z-index: 0; 
                 left: 50%;
             }
 
@@ -665,7 +665,7 @@ h1 {
                 display: none;
                 cursor: pointer; 
                 position: absolute; 
-                z-index: 1000; 
+                z-index: 0; 
                 left: 50%;
             }
 
@@ -673,7 +673,7 @@ h1 {
                 display: none;
                 cursor: pointer; 
                 position: absolute; 
-                z-index: 1000; 
+                z-index: 0; 
                 left: 50%;
             }
 
@@ -681,7 +681,7 @@ h1 {
                 display: none;
                 cursor: pointer; 
                 position: absolute; 
-                z-index: 1000; 
+                z-index: 1; 
                 left: 50%;
             }
         }
@@ -707,6 +707,126 @@ h1 {
     }
 }
 // === / DECOR ===
+
+// === SAVE ===
+.section-save {
+    .section-inner {
+        padding-top: $base * 15;
+        padding-bottom: $base * 15;
+
+        h2 {
+            font-size: $fs-xl;
+            font-weight: $fw-black;
+            text-align: center;
+            margin: 0;
+        }
+
+        .line {
+            margin-top: $base * 3;
+            margin-bottom: $base*10;
+            margin-left: 40%;
+            width: 20%;
+            border: 1px solid;
+            color: rgb(75, 130, 233);
+        }
+    }
+}
+
+.section-save-list {
+    display: flex;
+    flex-direction: column;
+
+
+    &__games {
+        display: flex;
+        flex-direction: column;
+
+        .text-title {
+            font-size: $fs-l;
+            font-weight: $fw-bold;
+        }
+
+        .wrapper-gifts {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+            overflow: scroll;
+
+            .card-item-gifts {
+                display: flex;
+                height: auto;
+                margin-left: $base*3;
+                background-color: $color-secondary;
+                border-radius: $base * 2;
+                color: $color-black;
+                font-size: $fs-s;
+                padding: $base * 2;
+
+                .card-item__title-gifts {
+                    font-weight: $fw-bold;
+                    font-size: $fs-l;
+                    text-align: center;
+                    padding-bottom: $base;
+                }
+
+                .card-text-gifts {
+                    text-align: justify;
+                }
+
+                img {
+                    border-radius: $base * 2;
+                }
+            }
+           
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__music {
+
+        .text-title {
+            font-size: $fs-l;
+            font-weight: $fw-bold;
+            margin-top: $base *15;
+            margin-bottom: $base * 10;
+        }
+
+        .card-wrapper {
+            max-height: 200px;
+            height: 100%;
+            overflow-y: scroll;
+        }
+
+        .card-item__title {
+            font-weight: $fw-light;
+            color: rgb(219, 219, 219);
+            font-size: $fs-m;
+            margin-bottom: $base;
+        }
+        
+        audio {
+            color: red;
+            width: 70%;
+            height: $base * 8;
+        }
+                audio::-webkit-media-controls-panel,
+                audio::-webkit-media-controls-timeline-container,
+                audio::-webkit-media-controls-current-time-display,
+                audio::-webkit-media-controls-time-remaining-display,
+                audio::-webkit-media-controls-timeline,
+                audio::-webkit-media-controls-volume-slider-container,
+                audio::-webkit-media-controls-volume-slider
+                 {
+                    background: rgb(155, 171, 211);
+                    color: black;
+                }
+    }
+}
+// === / SAVE ===
 
 // === EVENT ===
 .section-event {

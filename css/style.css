@@ -61,7 +61,7 @@ h1 {
   left: 0;
   right: 0;
   background-color: #040B3C;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .main-navigation {
@@ -409,8 +409,8 @@ h1 {
   background: url(/img/decor/music_2.png);
 }
 .section-decor .section-inner {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 28px;
+  padding-bottom: 36px;
 }
 
 .section-decor-room {
@@ -484,63 +484,63 @@ h1 {
   display: none;
   cursor: pointer;
   position: absolute;
-  z-index: 1000;
+  z-index: 0;
   left: 50%;
 }
 .section-decor-room .section-decor-room__wrap--left #sharik_2 {
   display: none;
   cursor: pointer;
   position: absolute;
-  z-index: 1000;
+  z-index: 0;
   left: 50%;
 }
 .section-decor-room .section-decor-room__wrap--left #sharik_3 {
   display: none;
   cursor: pointer;
   position: absolute;
-  z-index: 1000;
+  z-index: 0;
   left: 50%;
 }
 .section-decor-room .section-decor-room__wrap--left #heart {
   display: none;
   cursor: pointer;
   position: absolute;
-  z-index: 1000;
+  z-index: 0;
   left: 50%;
 }
 .section-decor-room .section-decor-room__wrap--left #heart_2 {
   display: none;
   cursor: pointer;
   position: absolute;
-  z-index: 1000;
+  z-index: 0;
   left: 50%;
 }
 .section-decor-room .section-decor-room__wrap--left #flag {
   display: none;
   cursor: pointer;
   position: absolute;
-  z-index: 1000;
+  z-index: 0;
   left: 50%;
 }
 .section-decor-room .section-decor-room__wrap--left #flowers {
   display: none;
   cursor: pointer;
   position: absolute;
-  z-index: 1000;
+  z-index: 0;
   left: 50%;
 }
 .section-decor-room .section-decor-room__wrap--left #flowers_2 {
   display: none;
   cursor: pointer;
   position: absolute;
-  z-index: 1000;
+  z-index: 0;
   left: 50%;
 }
 .section-decor-room .section-decor-room__wrap--left #music_decor {
   display: none;
   cursor: pointer;
   position: absolute;
-  z-index: 1000;
+  z-index: 1;
   left: 50%;
 }
 .section-decor-room .section-decor-room__wrap--right img {
@@ -556,6 +556,103 @@ h1 {
 .section-decor-room .text span {
   color: #F6255A;
   font-weight: 700;
+}
+
+.section-save .section-inner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.section-save .section-inner h2 {
+  font-size: 38px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+.section-save .section-inner .line {
+  margin-top: 12px;
+  margin-bottom: 40px;
+  margin-left: 40%;
+  width: 20%;
+  border: 1px solid;
+  color: #4b82e9;
+}
+
+.section-save-list {
+  display: flex;
+  flex-direction: column;
+}
+.section-save-list__games {
+  display: flex;
+  flex-direction: column;
+}
+.section-save-list__games .text-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+.section-save-list__games .wrapper-gifts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  overflow: scroll;
+}
+.section-save-list__games .wrapper-gifts .card-item-gifts {
+  display: flex;
+  height: auto;
+  margin-left: 12px;
+  background-color: #F2F2FF;
+  border-radius: 8px;
+  color: #000000;
+  font-size: 14px;
+  padding: 8px;
+}
+.section-save-list__games .wrapper-gifts .card-item-gifts .card-item__title-gifts {
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  padding-bottom: 4px;
+}
+.section-save-list__games .wrapper-gifts .card-item-gifts .card-text-gifts {
+  text-align: justify;
+}
+.section-save-list__games .wrapper-gifts .card-item-gifts img {
+  border-radius: 8px;
+}
+.section-save-list__games .wrapper-gifts img {
+  width: 100%;
+}
+.section-save-list__music .text-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.section-save-list__music .card-wrapper {
+  max-height: 200px;
+  height: 100%;
+  overflow-y: scroll;
+}
+.section-save-list__music .card-item__title {
+  font-weight: 300;
+  color: #dbdbdb;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.section-save-list__music audio {
+  color: red;
+  width: 70%;
+  height: 32px;
+}
+.section-save-list__music audio::-webkit-media-controls-panel,
+.section-save-list__music audio::-webkit-media-controls-timeline-container,
+.section-save-list__music audio::-webkit-media-controls-current-time-display,
+.section-save-list__music audio::-webkit-media-controls-time-remaining-display,
+.section-save-list__music audio::-webkit-media-controls-timeline,
+.section-save-list__music audio::-webkit-media-controls-volume-slider-container,
+.section-save-list__music audio::-webkit-media-controls-volume-slider {
+  background: #9babd3;
+  color: black;
 }
 
 .section-event {
