@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
 
 @mixin rubik {
     font-family: 'Rubik', sans-serif;
@@ -93,6 +93,18 @@ h1 {
             background-color: rgb(49, 175, 49);
         }
     }
+
+    &-gold {
+        margin-top: $base * 2;
+        margin-bottom: $base * 5;
+        background-color: gold;
+        color: $color-black;
+        font-weight: $fw-regular;
+
+        &:hover {
+            background-color: darken(gold, 5%);
+        }
+    }
 }
 
 .ta-c {
@@ -170,7 +182,7 @@ h1 {
 
 // === HERO IMAGE ===
 .section-hero-image {
-    background: url(/img/1.gif);
+    background: url(/img/video.gif);
 
     .slide-image {
         background-color: rgba(4, 11, 60, 0.79);
@@ -209,11 +221,16 @@ h1 {
         }
 
         .hero-image-main-wrapper__botton {
+
             h3 {
                 font-weight: $fw-regular;
                 font-size: $base * 8;
                 margin-top: $base * 10;
                 color: rgb(255, 255, 255);
+            }
+
+            .text {
+                margin-bottom: $base * 5;
             }
             &-wrap {
                 display: flex;
@@ -1030,6 +1047,50 @@ h1 {
     }
 
     .section-footer-navigation__docs {
+
+        .text-support_modal {
+            text-align: center;
+            margin-left: $base * 10;
+            margin-right: $base * 10;
+            margin-bottom: $base * 5;
+        }
+
+        .modal {
+
+            &-body {
+                .form {
+
+                    &-support {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        .input {
+                            margin-left: $base * 10;
+                            margin-right: $base * 3;
+                            margin-bottom: $base * 5;
+                            border: 1px solid rgb(231, 231, 231);
+                            border-radius: $base * 2;
+                            padding: $base * 2;
+                            width: 250px;
+                        }
+    
+                        .massage {
+                            width: 580px;
+                            height: $base * 50;
+                            margin-left: $base * 10;
+                            border: 1px solid rgb(231, 231, 231);
+                            border-radius: $base * 2;
+                        }
+                    }
+
+                    button {
+
+                        width: 100px;
+                        margin-left: 48%;
+                    }
+                }
+            }
+        }
 
         .modal {
             display: none;

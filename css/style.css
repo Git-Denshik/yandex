@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap");
 body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
@@ -49,6 +48,16 @@ h1 {
 }
 .btn-success:hover {
   background-color: #31af31;
+}
+.btn-gold {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  background-color: gold;
+  color: #000000;
+  font-weight: 400;
+}
+.btn-gold:hover {
+  background-color: #e6c200;
 }
 
 .ta-c {
@@ -109,7 +118,7 @@ h1 {
 }
 
 .section-hero-image {
-  background: url(/img/1.gif);
+  background: url(/img/video.gif);
 }
 .section-hero-image .slide-image {
   background-color: rgba(4, 11, 60, 0.79);
@@ -146,6 +155,9 @@ h1 {
   font-size: 32px;
   margin-top: 40px;
   color: white;
+}
+.section-hero-image .section-inner .hero-image-main-wrapper__botton .text {
+  margin-bottom: 20px;
 }
 .section-hero-image .section-inner .hero-image-main-wrapper__botton-wrap {
   display: flex;
@@ -823,6 +835,37 @@ h1 {
 .section-footer-navigation .сopyright {
   font-weight: 700;
   font-size: 14px;
+}
+.section-footer-navigation .section-footer-navigation__docs .text-support_modal {
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+.section-footer-navigation .section-footer-navigation__docs .modal-body .form-support {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.section-footer-navigation .section-footer-navigation__docs .modal-body .form-support .input {
+  margin-left: 40px;
+  margin-right: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #e7e7e7;
+  border-radius: 8px;
+  padding: 8px;
+  width: 250px;
+}
+.section-footer-navigation .section-footer-navigation__docs .modal-body .form-support .massage {
+  width: 580px;
+  height: 200px;
+  margin-left: 40px;
+  border: 1px solid #e7e7e7;
+  border-radius: 8px;
+}
+.section-footer-navigation .section-footer-navigation__docs .modal-body .form button {
+  width: 100px;
+  margin-left: 48%;
 }
 .section-footer-navigation .section-footer-navigation__docs .modal {
   display: none;
