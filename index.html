@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Landing page" />
+    <meta name="description" content="Яндекс Праздник поможет вам организовать праздник или вечеринку. " />
     <title>Яндекс Праздник - подбор подарков, музыки и развличений для праздника</title>
     <!-- Favicon -->
     <link rel="icon" href="img/favicon/favicon.png" type="image/x-icon">
@@ -12,12 +12,12 @@
     <!-- STYLE -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- / STYLE -->
     <!-- Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- / Swiper -->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <meta charset="UTF-8">
@@ -51,6 +51,12 @@
                         </ul>
                     </nav>
                 </div>
+                <button class="btn btn-no-bg btn-burger" id="btn-burger">
+                    <span class="btn-burger__line"></span>
+                    <span class="btn-burger__line btn-burger__line-little"></span>
+                    <span class="btn-burger__line"></span>
+                    <span class="btn-burger__line btn-burger__line-little"></span>
+                </button>
             </div>
         </div>
     </header>
@@ -191,17 +197,23 @@
                          <li class="section-gifts-list-wrap__item">
                              <img src="img/gifts/plus.png" alt="">
                              <div class="text-title">Плюс в подарок на праздник и просто так</div>
-                             <button class="btn">Купить Сертификат</button>
+                             <a href="https://plus.yandex.ru/present?utm_source=direct_search&utm_medium=paid_performance&utm_campaign=63826019%7CMSCAMP-62_[PL-P]_%7BWS:S%7D_RU-225_goal-PL_Category-Brand-New&utm_term=купить%20сертификат%20яндекс%20плюс&utm_content=INTid%7C0100000033200476343_%7Ccid%7C63826019%7Cgid%7C4644316799%7Caid%7C10979882627%7Cpos%7Cpremium1%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7C90d1r&yclid=4838405128675155254" class="section-gifts-list-wrap__item-link btn" rel ="noopener" target="_blank">
+                                Купить Сертификат
+                            </a>
                          </li>
                          <li class="section-gifts-list-wrap__item">
                              <img src="img/gifts/market.jpg" alt="">
                              <div class="text-title">Яндекс.Маркет теперь помогает выбрать подходящий подарок</div>
-                             <button class="btn">Перейти в магазин</button>
+                             <a href="https://market.yandex.ru/catalog--suveniry-i-podarki/54632/list?cpa=0&onstock=1&hid=91291&local-offers-first=0" class="section-gifts-list-wrap__item-link section-gifts-list-wrap__item-link-no btn" rel ="noopener" target="_blank">
+                                Перейти в магазин
+                            </a>
                          </li>
                          <li class="section-gifts-list-wrap__item">
                              <img src="img/gifts/yandex.jpg" alt="">
                              <div class="text-title">Яндекс Станция, умная колонка с Алисой</div>
-                             <button class="btn">Купить Станцию</button>
+                             <a href="https://yandex.ru/alice/station" class="section-gifts-list-wrap__item-link btn" rel ="noopener" target="_blank">
+                                Купить Станцию
+                            </a>
                          </li>
                      </ul>
                      <div class="text">
@@ -231,7 +243,7 @@
                       <div id="rep" class="music-content tabcontent">
                         <div class="card" data-id="01">
                                 <h4 class="item-title">Пустите меня на танцпол <span>HammAli & Navai</span></h4>
-                                <audio controls preload="auto" src="./music/rep/HammAli_Navai_-_Pustite_menya_na_tancpol_54422844.mp3" class="product-audio"></audio>
+                                <audio controls preload="auto" src="./music/rep/HammAli_Navai_-_Pustite_menya_na_tancpol_54422844.mp3" class="product-audio" nodownload></audio>
                             <div class="card-body">               
                                 <button data-cart type="button" class="btn">Добавить</button>
                             </div>
@@ -690,7 +702,7 @@
         <!-- / Мои подборки -->
 
         <!-- Event - студии -->
-        <div id="event-studios"></div>
+        <div id="event"></div>
         <section class="section-outer section-event">
             <div class="section-inner">
                 <div class="section-event-list">
@@ -771,7 +783,7 @@
                             </div>
                         </div>
                         <div class="list-wrapper__right">
-                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4914d62efb0977ffd6220439cd441f1a5be787feddd871db797e8910f54044bb&amp;source=constructor" width="758" height="550" frameborder="0"></iframe>
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4914d62efb0977ffd6220439cd441f1a5be787feddd871db797e8910f54044bb&amp;source=constructor" width="100%" height="550" frameborder="0"></iframe>
                         </div>
                     </div>
                 </div>
@@ -895,7 +907,7 @@
         </div>
     </footer>
     <!-- / Footer -->
-
+    <script src="./js/burger-menu.js"></script>
     <script src="./js/decor-modal.js"></script>
     <script src="./js/decor.js"></script>
     <script src="./js/modal.js"></script>
