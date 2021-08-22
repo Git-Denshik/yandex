@@ -25,6 +25,12 @@ h1 {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media (max-width: 575px) {
+  .section-inner-game {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}
 
 .btn {
   padding: 8px 12px;
@@ -36,6 +42,12 @@ h1 {
   color: #F2F2FF;
   background-color: #F6255A;
   cursor: pointer;
+}
+@media (max-width: 767px) {
+  .btn {
+    font-size: 12px;
+    padding: 4px;
+  }
 }
 .btn:hover {
   background-color: #c60838;
@@ -195,8 +207,10 @@ h1 {
   }
 }
 
-.section-hero-image {
-  background: url(/img/2.gif);
+@media (max-width: 767px) {
+  .section-hero-image {
+    background: url(/img/mobile.png);
+  }
 }
 .section-hero-image .slide-image {
   background-color: rgba(4, 11, 60, 0.55);
@@ -243,6 +257,11 @@ h1 {
     font-size: 28px;
   }
 }
+@media (max-width: 575px) {
+  .section-hero-image .section-inner .hero-image-main-wrapper__top h2 {
+    font-size: 24px;
+  }
+}
 .section-hero-image .section-inner .hero-image-main-wrapper__top .text {
   font-weight: 500;
   font-size: 38px;
@@ -251,6 +270,11 @@ h1 {
 @media (max-width: 767px) {
   .section-hero-image .section-inner .hero-image-main-wrapper__top .text {
     font-size: 28px;
+  }
+}
+@media (max-width: 575px) {
+  .section-hero-image .section-inner .hero-image-main-wrapper__top .text {
+    font-size: 24px;
   }
 }
 .section-hero-image .section-inner .hero-image-main-wrapper__botton h3 {
@@ -265,6 +289,11 @@ h1 {
     font-size: 24px;
   }
 }
+@media (max-width: 575px) {
+  .section-hero-image .section-inner .hero-image-main-wrapper__botton h3 {
+    font-size: 24px;
+  }
+}
 .section-hero-image .section-inner .hero-image-main-wrapper__botton .text {
   color: white;
   font-size: 20px;
@@ -274,6 +303,11 @@ h1 {
 @media (max-width: 767px) {
   .section-hero-image .section-inner .hero-image-main-wrapper__botton .text {
     font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .section-hero-image .section-inner .hero-image-main-wrapper__botton .text {
+    font-size: 12px;
   }
 }
 .section-hero-image .section-inner .hero-image-main-wrapper__botton-wrap {
@@ -303,8 +337,20 @@ h1 {
     margin-left: 8px;
   }
 }
+@media (max-width: 575px) {
+  .section-hero-image .section-inner .hero-image-main-wrapper__botton-wrap__item {
+    padding: 8px;
+    font-size: 16px;
+  }
+}
 .section-hero-image .section-inner .hero-image-main-wrapper__botton-wrap__item img {
   margin-right: 4px;
+}
+@media (max-width: 767px) {
+  .section-hero-image .section-inner .hero-image-main-wrapper__botton-wrap__item img {
+    width: 16px;
+    padding: 2px;
+  }
 }
 
 .section-gifts {
@@ -327,10 +373,22 @@ h1 {
   text-align: center;
   font-weight: 400;
 }
+@media (max-width: 767px) {
+  .section-games-list .text {
+    font-size: 14px;
+  }
+}
 .section-games-list h2 {
   font-size: 38px;
   font-weight: 700;
   margin-bottom: 60px;
+}
+@media (max-width: 575px) {
+  .section-games-list h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
 }
 .section-games-list .swiper-container {
   max-width: 100%;
@@ -361,6 +419,11 @@ h1 {
   font-size: 14px;
   padding: 20px;
 }
+@media (max-width: 767px) {
+  .section-games-list .swiper-container .swiper-wrapper__content-none {
+    display: none;
+  }
+}
 @media (max-width: 1199px) {
   .section-games-list .swiper-container .swiper-wrapper__content {
     width: 180px;
@@ -371,6 +434,13 @@ h1 {
 @media (max-width: 991px) {
   .section-games-list .swiper-container .swiper-wrapper__content {
     padding: 4px;
+  }
+}
+@media (max-width: 767px) {
+  .section-games-list .swiper-container .swiper-wrapper__content {
+    margin-left: 0;
+    margin-right: 4px;
+    margin-bottom: 4px;
   }
 }
 .section-games-list .swiper-container .swiper-wrapper__content + .section-games-list .swiper-container .swiper-wrapper__content {
@@ -393,17 +463,35 @@ h1 {
   font-weight: 700;
   margin-bottom: 12px;
 }
+@media (max-width: 767px) {
+  .section-games-list .swiper-container .swiper-wrapper__content .text-title {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+}
 .section-games-list .swiper-container .swiper-wrapper__content .text {
   font-size: 14px;
   font-weight: 400;
   text-align: justify;
   margin-bottom: 12px;
 }
+@media (max-width: 767px) {
+  .section-games-list .swiper-container .swiper-wrapper__content .text {
+    margin-bottom: 4px;
+  }
+}
 .section-games-list .swiper-container .swiper-wrapper__content .item-img {
   width: 150px;
   height: 150px;
   border-radius: 100%;
   margin-left: 12%;
+}
+@media (max-width: 767px) {
+  .section-games-list .swiper-container .swiper-wrapper__content .item-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -423,9 +511,11 @@ h1 {
   font-size: 38px;
   font-weight: 900;
 }
-@media (max-width: 991px) {
+@media (max-width: 575px) {
   .section-gifts-list h2 {
+    margin-top: 40px;
     margin-bottom: 40px;
+    font-size: 28px;
   }
 }
 .section-gifts-list .section-gifts-list-wrap {
@@ -497,10 +587,21 @@ h1 {
   text-align: center;
   font-size: 14px;
 }
+@media (max-width: 575px) {
+  .section-gifts-list .text {
+    flex-basis: 95%;
+  }
+}
 
 .section-music .section-inner {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+@media (max-width: 575px) {
+  .section-music .section-inner {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
 }
 
 .music {
@@ -511,6 +612,12 @@ h1 {
   font-size: 38px;
   text-align: center;
   margin-bottom: 60px;
+}
+@media (max-width: 575px) {
+  .music h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
 }
 .music-tab {
   display: flex;
@@ -526,6 +633,11 @@ h1 {
   .music-tab {
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+}
+@media (max-width: 575px) {
+  .music-tab {
+    font-size: 16px;
   }
 }
 .music-tab button {
@@ -642,6 +754,11 @@ h1 {
   font-size: 44px;
   font-weight: 900;
 }
+@media (max-width: 575px) {
+  .section-decor-room h2 {
+    font-size: 28px;
+  }
+}
 .section-decor-room .section-decor-room__wrap {
   display: flex;
 }
@@ -685,10 +802,51 @@ h1 {
 @media (max-width: 767px) {
   .section-decor-room .section-decor-room__wrap--left {
     flex-wrap: nowrap;
+    overflow: scroll;
   }
 }
 .section-decor-room .section-decor-room__wrap--left a {
   text-decoration: none;
+}
+.section-decor-room .section-decor-room__wrap--left .size-image {
+  width: auto;
+}
+@media (max-width: 767px) {
+  .section-decor-room .section-decor-room__wrap--left .size-image {
+    width: 60px;
+  }
+}
+.section-decor-room .section-decor-room__wrap--left .size-image-one {
+  width: auto;
+}
+@media (max-width: 767px) {
+  .section-decor-room .section-decor-room__wrap--left .size-image-one {
+    width: 120px;
+  }
+}
+.section-decor-room .section-decor-room__wrap--left .size-image-two {
+  width: auto;
+}
+@media (max-width: 767px) {
+  .section-decor-room .section-decor-room__wrap--left .size-image-two {
+    width: 40px;
+  }
+}
+.section-decor-room .section-decor-room__wrap--left .size-image-tree {
+  width: auto;
+}
+@media (max-width: 767px) {
+  .section-decor-room .section-decor-room__wrap--left .size-image-tree {
+    width: 50px;
+  }
+}
+.section-decor-room .section-decor-room__wrap--left .size-image-four {
+  width: auto;
+}
+@media (max-width: 767px) {
+  .section-decor-room .section-decor-room__wrap--left .size-image-four {
+    width: 180px;
+  }
 }
 .section-decor-room .section-decor-room__wrap--left .close-img {
   width: 56px;
@@ -763,12 +921,22 @@ h1 {
   z-index: 0;
   left: 50%;
 }
+@media (max-width: 767px) {
+  .section-decor-room .section-decor-room__wrap--left #sharik {
+    left: 25%;
+  }
+}
 .section-decor-room .section-decor-room__wrap--left #sharik_2 {
   display: none;
   cursor: pointer;
   position: absolute;
   z-index: 0;
   left: 50%;
+}
+@media (max-width: 767px) {
+  .section-decor-room .section-decor-room__wrap--left #sharik_2 {
+    left: 25%;
+  }
 }
 .section-decor-room .section-decor-room__wrap--left #sharik_3 {
   display: none;
@@ -777,12 +945,22 @@ h1 {
   z-index: 0;
   left: 50%;
 }
+@media (max-width: 767px) {
+  .section-decor-room .section-decor-room__wrap--left #sharik_3 {
+    left: 25%;
+  }
+}
 .section-decor-room .section-decor-room__wrap--left #heart {
   display: none;
   cursor: pointer;
   position: absolute;
   z-index: 0;
   left: 50%;
+}
+@media (max-width: 767px) {
+  .section-decor-room .section-decor-room__wrap--left #heart {
+    left: 25%;
+  }
 }
 .section-decor-room .section-decor-room__wrap--left #heart_2 {
   display: none;
@@ -791,12 +969,22 @@ h1 {
   z-index: 0;
   left: 50%;
 }
+@media (max-width: 767px) {
+  .section-decor-room .section-decor-room__wrap--left #heart_2 {
+    left: 25%;
+  }
+}
 .section-decor-room .section-decor-room__wrap--left #flag {
   display: none;
   cursor: pointer;
   position: absolute;
   z-index: 0;
   left: 50%;
+}
+@media (max-width: 767px) {
+  .section-decor-room .section-decor-room__wrap--left #flag {
+    left: 25%;
+  }
 }
 .section-decor-room .section-decor-room__wrap--left #flowers {
   display: none;
@@ -805,6 +993,11 @@ h1 {
   z-index: 0;
   left: 50%;
 }
+@media (max-width: 767px) {
+  .section-decor-room .section-decor-room__wrap--left #flowers {
+    left: 25%;
+  }
+}
 .section-decor-room .section-decor-room__wrap--left #flowers_2 {
   display: none;
   cursor: pointer;
@@ -812,12 +1005,22 @@ h1 {
   z-index: 0;
   left: 50%;
 }
+@media (max-width: 767px) {
+  .section-decor-room .section-decor-room__wrap--left #flowers_2 {
+    left: 25%;
+  }
+}
 .section-decor-room .section-decor-room__wrap--left #music_decor {
   display: none;
   cursor: pointer;
   position: absolute;
   z-index: 1;
   left: 50%;
+}
+@media (max-width: 767px) {
+  .section-decor-room .section-decor-room__wrap--left #music_decor {
+    left: 25%;
+  }
 }
 .section-decor-room .section-decor-room__wrap--right img {
   width: 100%;
@@ -850,6 +1053,11 @@ h1 {
     margin-right: 20px;
   }
 }
+@media (max-width: 575px) {
+  .section-decor-room .text {
+    font-size: 16px;
+  }
+}
 
 .section-save .section-inner {
   padding-top: 60px;
@@ -860,6 +1068,11 @@ h1 {
   font-weight: 900;
   text-align: center;
   margin: 0;
+}
+@media (max-width: 575px) {
+  .section-save .section-inner h2 {
+    font-size: 28px;
+  }
 }
 .section-save .section-inner .line {
   margin-top: 12px;
@@ -885,12 +1098,19 @@ h1 {
   }
 }
 .section-save-list__games .text-title {
+  text-align: center;
+  margin-bottom: 20px;
   font-size: 28px;
   font-weight: 700;
 }
 @media (max-width: 1199px) {
   .section-save-list__games .text-title {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .section-save-list__games .text-title {
+    font-size: 20px;
   }
 }
 .section-save-list__games .wrapper-gifts {
@@ -946,10 +1166,17 @@ h1 {
   }
 }
 .section-save-list__music .text-title {
+  text-align: center;
   font-size: 28px;
   font-weight: 700;
   margin-top: 60px;
   margin-bottom: 40px;
+}
+@media (max-width: 575px) {
+  .section-save-list__music .text-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 }
 .section-save-list__music .card-wrapper {
   max-height: 200px;
@@ -961,10 +1188,12 @@ h1 {
   color: #dbdbdb;
   font-size: 18px;
   margin-bottom: 4px;
+  margin-left: 15%;
 }
 .section-save-list__music audio {
   color: red;
   width: 70%;
+  margin-left: 15%;
   height: 32px;
 }
 @media (max-width: 767px) {
@@ -1021,15 +1250,51 @@ h1 {
   color: #000000;
   background-color: #F2F2FF;
 }
+@media (max-width: 1199px) {
+  .section-event-list .modal-body {
+    left: 1%;
+    right: 1%;
+  }
+}
 .section-event-list .modal-body h3 {
   padding-top: 12px;
   padding-bottom: 12px;
   font-size: 28px;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .section-event-list .modal-body h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .section-event-list .modal-body h3 {
+    font-size: 20px;
+  }
+}
 .section-event-list .modal-body p {
   font-weight: 400;
   padding: 0 28px;
+}
+@media (max-width: 767px) {
+  .section-event-list .modal-body p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .section-event-list .modal-body p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .section-event-list .modal-body ul {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .section-event-list .modal-body ul {
+    font-size: 12px;
+  }
 }
 .section-event-list .modal-body .close {
   position: absolute;
@@ -1071,6 +1336,13 @@ h1 {
   font-size: 18px;
   text-align: center;
   padding-bottom: 40px;
+}
+@media (max-width: 575px) {
+  .section-event-list .text {
+    font-size: 16px;
+    width: 95%;
+    margin-left: 2.5%;
+  }
 }
 .section-event-list .list-wrapper {
   display: flex;
@@ -1230,6 +1502,22 @@ h1 {
   margin-right: 40px;
   margin-bottom: 20px;
 }
+@media (max-width: 767px) {
+  .section-footer-navigation .section-footer-navigation__docs .text-support_modal {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .section-footer-navigation .section-footer-navigation__docs .text-support_modal {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1199px) {
+  .section-footer-navigation .section-footer-navigation__docs .modal-body {
+    left: 1%;
+    right: 1%;
+  }
+}
 .section-footer-navigation .section-footer-navigation__docs .modal-body .form-support {
   display: flex;
   justify-content: center;
@@ -1244,6 +1532,15 @@ h1 {
   padding: 8px;
   width: 248px;
 }
+@media (max-width: 767px) {
+  .section-footer-navigation .section-footer-navigation__docs .modal-body .form-support .input {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 8px;
+    padding: 4px;
+    width: 90%;
+  }
+}
 .section-footer-navigation .section-footer-navigation__docs .modal-body .form-support .massage {
   width: 580px;
   height: 200px;
@@ -1251,9 +1548,22 @@ h1 {
   border: 1px solid #e7e7e7;
   border-radius: 8px;
 }
+@media (max-width: 767px) {
+  .section-footer-navigation .section-footer-navigation__docs .modal-body .form-support .massage {
+    width: 90%;
+    height: 140px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 .section-footer-navigation .section-footer-navigation__docs .modal-body .form button {
   width: 100px;
   margin-left: 48%;
+}
+@media (max-width: 767px) {
+  .section-footer-navigation .section-footer-navigation__docs .modal-body .form button {
+    margin-left: 44%;
+  }
 }
 .section-footer-navigation .section-footer-navigation__docs .modal {
   display: none;
@@ -1271,10 +1581,16 @@ h1 {
   position: fixed;
   top: 100px;
   bottom: auto;
-  left: 20%;
-  right: 20%;
+  left: 25%;
+  right: 25%;
   color: #000000;
   background-color: #F2F2FF;
+}
+@media (max-width: 1199px) {
+  .section-footer-navigation .section-footer-navigation__docs .modal-body {
+    left: 1%;
+    right: 1%;
+  }
 }
 .section-footer-navigation .section-footer-navigation__docs .modal-body h3 {
   padding-top: 12px;
@@ -1282,9 +1598,29 @@ h1 {
   font-size: 28px;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .section-footer-navigation .section-footer-navigation__docs .modal-body h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .section-footer-navigation .section-footer-navigation__docs .modal-body h3 {
+    font-size: 20px;
+  }
+}
 .section-footer-navigation .section-footer-navigation__docs .modal-body p {
   font-weight: 400;
   padding: 0 28px;
+}
+@media (max-width: 767px) {
+  .section-footer-navigation .section-footer-navigation__docs .modal-body p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .section-footer-navigation .section-footer-navigation__docs .modal-body p {
+    font-size: 12px;
+  }
 }
 .section-footer-navigation .section-footer-navigation__docs .modal-body .close {
   position: absolute;

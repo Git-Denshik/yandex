@@ -64,6 +64,13 @@ h1 {
         padding-top: $base * 15;
         padding-bottom: $base * 15;
     }
+
+    &-game {
+        @media (max-width: $breakpoint-xs-max) {
+            padding-top: $base * 7;
+            padding-bottom: $base * 7;
+        }
+    }
 }
 
 .btn {
@@ -76,6 +83,11 @@ h1 {
     color: $color-secondary;
     background-color: $color-red;
     cursor:pointer;
+
+    @media (max-width: $breakpoint-sm-max) {
+        font-size: $base * 3;
+        padding: $base;
+    }
 
     &:hover {
         background-color: darken($color-red, 15%);
@@ -265,7 +277,10 @@ h1 {
 
 // === HERO IMAGE ===
 .section-hero-image {
-    background: url(/img/2.gif);
+
+    @media(max-width:$breakpoint-sm-max) {
+        background: url(/img/mobile.png);
+    }
 
     .slide-image {
         background-color: rgba(4, 11, 60, 0.55);
@@ -309,6 +324,10 @@ h1 {
                     @media (max-width:$breakpoint-sm-max) {
                         font-size: $fs-l;
                     }
+
+                    @media (max-width:$breakpoint-xs-max) {
+                        font-size: $base * 6;
+                    }
                 }
 
                 .text {
@@ -318,6 +337,9 @@ h1 {
 
                     @media (max-width:$breakpoint-sm-max) {
                         font-size: $fs-l;
+                    }
+                    @media (max-width:$breakpoint-xs-max) {
+                        font-size: $base * 6;
                     }
                 }
             }
@@ -335,6 +357,10 @@ h1 {
                     margin-top: $base * 7;
                     font-size: $base * 6;
                 }
+
+                @media (max-width:$breakpoint-xs-max) {
+                    font-size: $base * 6;
+                }
             }
 
             .text {
@@ -345,6 +371,10 @@ h1 {
 
                 @media (max-width:$breakpoint-sm-max) {
                     font-size: $base * 4;
+                }
+
+                @media (max-width:$breakpoint-xs-max) {
+                    font-size: $base * 3;
                 }
             }
             &-wrap {
@@ -372,8 +402,18 @@ h1 {
                         margin-left: $base * 2;
                     }
 
+                    @media (max-width:$breakpoint-xs-max) {
+                        padding: $base * 2;
+                        font-size: $base * 4;
+                    }
+
                     img {
                         margin-right: $base;
+
+                        @media (max-width:$breakpoint-sm-max) {
+                            width: $base*4;
+                            padding: $base/2;
+                        }
                     }
                 }
             }
@@ -402,12 +442,22 @@ h1 {
     .text {
         text-align: center;
         font-weight: $fw-regular;
+
+        @media(max-width:$breakpoint-sm-max) {
+            font-size: $fs-s;
+        }
     }
 
     h2 {
         font-size: $fs-xl;
         font-weight: $fw-bold;
         margin-bottom: $base * 15;
+
+        @media (max-width:$breakpoint-xs-max) {
+            font-size: $fs-l;
+            font-weight: $fw-bold;
+            margin-bottom: $base * 10;
+        }
     }
 
     .swiper-container {
@@ -443,6 +493,12 @@ h1 {
             font-size: $fs-s;
             padding: $base * 5;
 
+            &-none {
+                @media(max-width:$breakpoint-sm-max) {
+                   display: none;
+                }
+            }
+
             @media(max-width:$breakpoint-lg-max) {
                 width: $base * 45;
                 margin-left: $base*2;
@@ -452,6 +508,12 @@ h1 {
             @media(max-width:$breakpoint-md-max) {
                 padding: $base;
             }
+
+            @media(max-width:$breakpoint-sm-max) {
+                margin-left: 0;
+                margin-right: $base;
+                margin-bottom: $base ;
+             }
 
             & + & {
                 margin-left: $base * 5;
@@ -474,6 +536,11 @@ h1 {
                     font-size: $fs-l;
                     font-weight: $fw-bold;
                     margin-bottom: $base * 3;
+
+                    @media(max-width:$breakpoint-sm-max) {
+                        font-size: $fs-m;
+                        margin-bottom: $base;
+                    }
                 }
     
                 .text {
@@ -481,6 +548,10 @@ h1 {
                     font-weight: $fw-regular;
                     text-align: justify;
                     margin-bottom: $base * 3;
+
+                    @media(max-width:$breakpoint-sm-max) {
+                        margin-bottom: $base;
+                    }
                 }
     
                 .item-img {
@@ -488,6 +559,12 @@ h1 {
                     height: 150px;
                     border-radius: 100%;
                     margin-left: 12%;
+
+                    @media(max-width:$breakpoint-sm-max) {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: $base;
+                    }
                 }
             
         }
@@ -516,8 +593,10 @@ h1 {
         font-size: $fs-xl;
         font-weight: $fw-black;
 
-        @media(max-width:$breakpoint-md-max) {
+        @media (max-width:$breakpoint-xs-max) {
+            margin-top: $base * 10;
             margin-bottom: $base * 10;
+            font-size: $fs-l;
         }
     }
 
@@ -592,6 +671,10 @@ h1 {
         flex-basis: 65%;
         text-align: center;
         font-size: $fs-s;
+
+        @media (max-width: $breakpoint-xs-max) {
+            flex-basis: 95%;
+        }
     }
 }
 // === / GIGTS ===
@@ -601,6 +684,11 @@ h1 {
     .section-inner {
         padding-top: $base * 10;
         padding-bottom: $base * 10;
+
+        @media (max-width: $breakpoint-xs-max) {
+            padding-top: $base * 7;
+            padding-bottom: $base * 7;
+        }
     }
 }
 .music {
@@ -611,6 +699,11 @@ h1 {
         font-size: $fs-xl;
         text-align: center;
         margin-bottom: $base * 15;
+
+        @media (max-width: $breakpoint-xs-max) {
+            font-size: $fs-l;
+            margin-bottom: $base * 10;
+        }
     }
     &-tab {
         h3 {
@@ -625,6 +718,10 @@ h1 {
         @media (max-width:$breakpoint-sm-max) {
             flex-wrap: wrap;
             justify-content: space-around;
+        }
+
+        @media (max-width: $breakpoint-xs-max) {
+            font-size: $base * 4;
         }
     
         button {
@@ -758,6 +855,10 @@ h1 {
         text-align: center;
         font-size: $base * 11;
         font-weight: $fw-black;
+
+        @media (max-width: $breakpoint-xs-max) {
+            font-size: $base * 7;
+        }
     }
     
     .section-decor-room__wrap {
@@ -799,10 +900,51 @@ h1 {
 
             @media (max-width:$breakpoint-sm-max) {
                 flex-wrap: nowrap;
+                overflow: scroll;
             }
 
             a {
                 text-decoration: none;
+            }
+
+            .size-image {
+                width: auto;
+
+                @media (max-width:$breakpoint-sm-max) {
+                    width: 60px;
+                }
+
+                &-one {
+                    width: auto;
+
+                    @media (max-width:$breakpoint-sm-max) {
+                        width: 120px;
+                    }
+                }
+
+                &-two {
+                    width: auto;
+
+                    @media (max-width:$breakpoint-sm-max) {
+                        width: 40px;
+                    }
+                }
+
+                &-tree {
+                    width: auto;
+
+                    @media (max-width:$breakpoint-sm-max) {
+                        width: 50px;
+                    }
+                }
+
+                &-four {
+                    width: auto;
+
+                    @media (max-width:$breakpoint-sm-max) {
+                        width: 180px;
+                    }
+                }
             }
 
             .close-img {
@@ -879,6 +1021,10 @@ h1 {
                 position: absolute; 
                 z-index: 0; 
                 left: 50%;
+
+                @media (max-width:$breakpoint-sm-max) {
+                   left: 25%;
+                }
             }
 
             #sharik_2 {
@@ -887,6 +1033,10 @@ h1 {
                 position: absolute; 
                 z-index: 0; 
                 left: 50%;
+
+                @media (max-width:$breakpoint-sm-max) {
+                    left: 25%;
+                 }
             }
 
             #sharik_3 {
@@ -895,6 +1045,10 @@ h1 {
                 position: absolute; 
                 z-index: 0; 
                 left: 50%;
+
+                @media (max-width:$breakpoint-sm-max) {
+                    left: 25%;
+                 }
             }
 
             #heart {
@@ -903,6 +1057,10 @@ h1 {
                 position: absolute; 
                 z-index: 0; 
                 left: 50%;
+
+                @media (max-width:$breakpoint-sm-max) {
+                    left: 25%;
+                 }
             }
 
             #heart_2 {
@@ -911,6 +1069,10 @@ h1 {
                 position: absolute; 
                 z-index: 0; 
                 left: 50%;
+
+                @media (max-width:$breakpoint-sm-max) {
+                    left: 25%;
+                 }
             }
 
             #flag {
@@ -919,6 +1081,10 @@ h1 {
                 position: absolute; 
                 z-index: 0; 
                 left: 50%;
+
+                @media (max-width:$breakpoint-sm-max) {
+                    left: 25%;
+                 }
             }
 
             #flowers {
@@ -927,6 +1093,10 @@ h1 {
                 position: absolute; 
                 z-index: 0; 
                 left: 50%;
+
+                @media (max-width:$breakpoint-sm-max) {
+                    left: 25%;
+                 }
             }
 
             #flowers_2 {
@@ -935,6 +1105,10 @@ h1 {
                 position: absolute; 
                 z-index: 0; 
                 left: 50%;
+
+                @media (max-width:$breakpoint-sm-max) {
+                    left: 25%;
+                 }
             }
 
             #music_decor {
@@ -943,6 +1117,10 @@ h1 {
                 position: absolute; 
                 z-index: 1; 
                 left: 50%;
+
+                @media (max-width:$breakpoint-sm-max) {
+                    left: 25%;
+                 }
             }
         }
 
@@ -978,6 +1156,10 @@ h1 {
             margin-left: $base*5;
             margin-right: $base*5;
         }
+
+        @media (max-width: $breakpoint-xs-max) {
+            font-size: $base * 4;
+        }
     }
 }
 // === / DECOR ===
@@ -993,6 +1175,10 @@ h1 {
             font-weight: $fw-black;
             text-align: center;
             margin: 0;
+
+            @media (max-width: $breakpoint-xs-max) {
+                font-size: $fs-l;
+            }
         }
 
         .line {
@@ -1021,11 +1207,17 @@ h1 {
         }
 
         .text-title {
+            text-align: center;
+            margin-bottom: $base * 5;
             font-size: $fs-l;
             font-weight: $fw-bold;
 
             @media(max-width:$breakpoint-lg-max) {
                 margin-bottom: $base*5;
+            }
+
+            @media (max-width: $breakpoint-xs-max) {
+                font-size: $base * 5;
             }
         }
 
@@ -1091,10 +1283,16 @@ h1 {
         }
 
         .text-title {
+            text-align: center;
             font-size: $fs-l;
             font-weight: $fw-bold;
             margin-top: $base *15;
             margin-bottom: $base * 10;
+
+            @media (max-width: $breakpoint-xs-max) {
+                font-size: $base * 5;
+                margin-bottom: $base * 5;
+            }
         }
 
         .card-wrapper {
@@ -1108,11 +1306,13 @@ h1 {
             color: rgb(219, 219, 219);
             font-size: $fs-m;
             margin-bottom: $base;
+            margin-left: 15%;
         }
         
         audio {
             color: red;
             width: 70%;
+            margin-left: 15%;
             height: $base * 8;
 
             @media (max-width:$breakpoint-sm-max) {
@@ -1176,16 +1376,48 @@ h1 {
             color: $color-black;
             background-color: $color-secondary;
 
+            @media(max-width: $breakpoint-lg-max) {
+                left: 1%;
+                right: 1%;
+            }
+
             h3 {
                 padding-top: $base * 3;
                 padding-bottom: $base * 3;
                 font-size: $fs-l;
                 text-align: center;
+
+                @media(max-width: $breakpoint-sm-max) {
+                    font-size: $base * 6;
+                }
+
+                @media(max-width: $breakpoint-xs-max) {
+                    font-size: $base * 5;
+                }
             }
 
             p {
                 font-weight: $fw-regular;
                 padding: 0 $base*7;
+
+                @media(max-width: $breakpoint-sm-max) {
+                    font-size: $base * 4;
+                }
+
+                @media(max-width: $breakpoint-xs-max) {
+                    font-size: $base * 3;
+                }
+    
+            }
+
+            ul {
+                @media(max-width: $breakpoint-sm-max) {
+                    font-size: $base * 4;
+                }
+
+                @media(max-width: $breakpoint-xs-max) {
+                    font-size: $base * 3;
+                }
             }
 
             .close {
@@ -1231,6 +1463,12 @@ h1 {
         font-size: $fs-m;
         text-align: center;
         padding-bottom: $base * 10;
+
+        @media (max-width: $breakpoint-xs-max) {
+            font-size: $base * 4;
+            width: 95%;
+            margin-left: 2.5%;
+        }
     }
 
     .list-wrapper {
@@ -1404,11 +1642,25 @@ h1 {
             margin-left: $base * 10;
             margin-right: $base * 10;
             margin-bottom: $base * 5;
+
+            @media(max-width: $breakpoint-sm-max) {
+                font-size: $base * 4;
+            }
+
+            @media(max-width: $breakpoint-xs-max) {
+                font-size: $base * 3;
+            }
         }
 
         .modal {
 
             &-body {
+
+                @media(max-width: $breakpoint-lg-max) {
+                    left: 1%;
+                    right: 1%;
+                }
+
                 .form {
 
                     &-support {
@@ -1423,6 +1675,14 @@ h1 {
                             border-radius: $base * 2;
                             padding: $base * 2;
                             width: $base * 62;
+
+                            @media(max-width: $breakpoint-sm-max) {
+                                margin-left: 5%;
+                                margin-right: 5%;
+                                margin-bottom: $base * 2;
+                                padding: $base;
+                                width: 90%;
+                            }
                         }
     
                         .massage {
@@ -1431,13 +1691,23 @@ h1 {
                             margin-left: $base * 10;
                             border: 1px solid rgb(231, 231, 231);
                             border-radius: $base * 2;
+
+                            @media(max-width: $breakpoint-sm-max) {
+                                width: 90%;
+                                height: $base * 35;
+                                margin-left: 5%;
+                                margin-right: 5%;
+                            }
                         }
                     }
 
                     button {
-
                         width: $base * 25;
                         margin-left: 48%;
+
+                        @media(max-width: $breakpoint-sm-max) {
+                            margin-left: 44%;
+                        }
                     }
                 }
             }
@@ -1460,21 +1730,42 @@ h1 {
                 position: fixed;
                 top: $base * 25;
                 bottom: auto;
-                left: 20%;
-                right: 20%;
+                left: 25%;
+                right: 25%;
                 color: $color-black;
                 background-color: $color-secondary;
+
+                @media(max-width: $breakpoint-lg-max) {
+                    left: 1%;
+                    right: 1%;
+                }
     
                 h3 {
                     padding-top: $base * 3;
                     padding-bottom: $base * 3;
                     font-size: $fs-l;
                     text-align: center;
+
+                    @media(max-width: $breakpoint-sm-max) {
+                        font-size: $base * 6;
+                    }
+    
+                    @media(max-width: $breakpoint-xs-max) {
+                        font-size: $base * 5;
+                    }
                 }
     
                 p {
                     font-weight: $fw-regular;
                     padding: 0 $base*7;
+
+                    @media(max-width: $breakpoint-sm-max) {
+                        font-size: $base * 4;
+                    }
+    
+                    @media(max-width: $breakpoint-xs-max) {
+                        font-size: $base * 3;
+                    }
                 }
     
                 .close {
