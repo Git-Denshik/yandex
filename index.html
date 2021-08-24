@@ -25,33 +25,34 @@
         <div class="section-inner section-inner-wide">
             <div class="main-navigation">
                 <h1 class="logo">
-                    <a href="index.html" class="logo-link" aria-label="Logo"><span>Я</span>ндекс Праздник</a>
+                    <a href="#home" class="logo-link scroll-to" aria-label="Logo"><span>Я</span>ндекс Праздник</a>
+                    <span class="visually-hidden">Logo</span>
                 </h1>
                 <div class="main-navigation__inner-wrap">
                     <nav class="nav">
                         <ul class="nav-wrapper">
                             <li class="nav-wrapper__item">
-                                <a href="#games" class="nav-wrapper__item-link">Подобрать развлечения</a>
+                                <a href="#games" class="nav-wrapper__item-link scroll-to">Подобрать развлечения</a>
                             </li>
                             <li class="nav-wrapper__item">
-                                <a href="#gifts" class="nav-wrapper__item-link">Подарки</a>
+                                <a href="#gifts" class="nav-wrapper__item-link scroll-to">Подарки</a>
                             </li>
                             <li class="nav-wrapper__item">
-                                <a href="#music" class="nav-wrapper__item-link">Подобрать Музыку</a>
+                                <a href="#music" class="nav-wrapper__item-link scroll-to">Подобрать Музыку</a>
                             </li>
                             <li class="nav-wrapper__item">
-                                <a href="#dekor" class="nav-wrapper__item-link">Конструктор декора</a>
+                                <a href="#dekor" class="nav-wrapper__item-link scroll-to">Конструктор декора</a>
                             </li>
                             <li class="nav-wrapper__item">
-                                <a href="#save" class="nav-wrapper__item-link">Моя подборка</a>
+                                <a href="#save" class="nav-wrapper__item-link scroll-to">Моя подборка</a>
                             </li>
                             <li class="nav-wrapper__item">
-                                <a href="#art-studios" class="nav-wrapper__item-link">Event - студии</a>
+                                <a href="#art-studios" class="nav-wrapper__item-link scroll-to">Event - студии</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <button class="btn btn-no-bg btn-burger" id="btn-burger">
+                <button class="btn btn-no-bg btn-burger" id="btn-burger" aria-label="Toggle navigation">
                     <span class="btn-burger__line"></span>
                     <span class="btn-burger__line btn-burger__line-little"></span>
                     <span class="btn-burger__line"></span>
@@ -62,7 +63,8 @@
     </header>
     <main>
         <!-- hero-image -->
-        <section class="section-outer section-hero-image" style="background: url(img//2.gif);">
+        <div id="home"></div>
+        <section class="section-outer section-hero-image" style="background: url(img//2.gif) no-repeat 50% 50%;">
             <div class="slide-image">
                 <div class="section-inner">
                     <div class="hero-image-main">
@@ -121,7 +123,7 @@
                                 <img src="img/games/салют.png" alt="" class="item-img product-gifts">
                                 <div class="text-title ta-c item-title-gifts">Салют</div>
                                 <div class="text item-text-gifts">Пра́здничный салют — по особо торжественным праздникам</div>
-                                <a href="https://market.yandex.ru/catalog--feierverki/18071689/list?clid=703&cpa=0&onstock=1&hid=215930&local-offers-first=0" rel = "noopener" target="_blank" class="swiper-wrapper__content-link btn">
+                                <a href="https://market.yandex.ru/catalog--feierverki/18071689/list?clid=703&cpa=0&onstock=1&hid=215930&local-offers-first=0" rel = "noopener" target="_blank" class="swiper-wrapper__content-link btn" aria-label="Games">
                                     Купить в Яндекс <span>Маркете</span>
                                 </a>
                                 <button data-gifts type="button" class="btn btn-success">Добавить</button>
@@ -130,7 +132,7 @@
                                 <img src="img/games/караоке.jpeg" class="item-img product-gifts" alt="">
                                 <div class="text-title ta-c item-title-gifts">Караоке</div>
                                 <div class="text item-text-gifts">Отличный способ поднять себе настроение или повеселиться в компании раскованных людей.</div>
-                                <a href="https://vkaraoke.pro/online/" rel ="noopener" target="_blank" class="swiper-wrapper__content-link btn">Перейти в режим караоке</a>
+                                <a href="https://vkaraoke.pro/online/" rel ="noopener" target="_blank" class="swiper-wrapper__content-link btn" aria-label="Games">Перейти в режим караоке</a>
                                 <button data-gifts type="button" class="btn btn-success">Добавить</button>
                             </div>
                             <div class="cardgifts swiper-wrapper__content" data-id="0002">
@@ -158,7 +160,7 @@
                                 <img src="img/games/настолки.jpg" alt="" class="item-img product-gifts">
                                 <div class="text-title ta-c item-title-gifts">Настольные игры для вечеринок</div>
                                 <div class="text item-text-gifts">Лучшие настольные игры для вечеринок взрослых прогонят мрачные мысли</div>
-                                <a href="https://market.yandex.ru/catalog--nastolnye-igry/59742/list?text=%D0%9D%D0%B0%D1%81%D1%82%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%B8%D0%B3%D1%80%D1%8B&hid=10682647&clid=1603&utm_source=google&utm_medium=search&utm_campaign=gp_cat_dp_dety_nastolnye_igry_sgb_search_rus%7C10682647&utm_term=10682647%7C7569&utm_content=cid%3A13883920256%7Cgid%3A130064881132%7Caid%3A536685400250%7Cph%3Akwd-324645822851%7Cpt%3A%7Cpn%3A%7Csrc%3A%7Cst%3Ag&cpa=1&onstock=0&local-offers-first=0" rel = "”noopener" target="_blank" class="swiper-wrapper__content-link btn">
+                                <a href="https://market.yandex.ru/catalog--nastolnye-igry/59742/list?text=%D0%9D%D0%B0%D1%81%D1%82%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%B8%D0%B3%D1%80%D1%8B&hid=10682647&clid=1603&utm_source=google&utm_medium=search&utm_campaign=gp_cat_dp_dety_nastolnye_igry_sgb_search_rus%7C10682647&utm_term=10682647%7C7569&utm_content=cid%3A13883920256%7Cgid%3A130064881132%7Caid%3A536685400250%7Cph%3Akwd-324645822851%7Cpt%3A%7Cpn%3A%7Csrc%3A%7Cst%3Ag&cpa=1&onstock=0&local-offers-first=0" rel = "”noopener" target="_blank" class="swiper-wrapper__content-link btn" aria-label="Games">
                                     Купить в Яндекс <span>Маркете</span>
                                 </a>
                                 <button data-gifts type="button" class="btn btn-success">Добавить</button> 
@@ -197,21 +199,21 @@
                          <li class="section-gifts-list-wrap__item">
                              <img src="img/gifts/plus.png" alt="">
                              <div class="text-title">Плюс в подарок на праздник и просто так</div>
-                             <a href="https://plus.yandex.ru/present?utm_source=direct_search&utm_medium=paid_performance&utm_campaign=63826019%7CMSCAMP-62_[PL-P]_%7BWS:S%7D_RU-225_goal-PL_Category-Brand-New&utm_term=купить%20сертификат%20яндекс%20плюс&utm_content=INTid%7C0100000033200476343_%7Ccid%7C63826019%7Cgid%7C4644316799%7Caid%7C10979882627%7Cpos%7Cpremium1%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7C90d1r&yclid=4838405128675155254" class="section-gifts-list-wrap__item-link btn" rel ="noopener" target="_blank">
+                             <a href="https://plus.yandex.ru/present?utm_source=direct_search&utm_medium=paid_performance&utm_campaign=63826019%7CMSCAMP-62_[PL-P]_%7BWS:S%7D_RU-225_goal-PL_Category-Brand-New&utm_term=купить%20сертификат%20яндекс%20плюс&utm_content=INTid%7C0100000033200476343_%7Ccid%7C63826019%7Cgid%7C4644316799%7Caid%7C10979882627%7Cpos%7Cpremium1%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7C90d1r&yclid=4838405128675155254" class="section-gifts-list-wrap__item-link btn" rel ="noopener" target="_blank" aria-label="Yandex Plus">
                                 Купить Сертификат
                             </a>
                          </li>
                          <li class="section-gifts-list-wrap__item">
                              <img src="img/gifts/market.jpg" alt="">
                              <div class="text-title">Яндекс.Маркет теперь помогает выбрать подходящий подарок</div>
-                             <a href="https://market.yandex.ru/catalog--suveniry-i-podarki/54632/list?cpa=0&onstock=1&hid=91291&local-offers-first=0" class="section-gifts-list-wrap__item-link section-gifts-list-wrap__item-link-no btn" rel ="noopener" target="_blank">
+                             <a href="https://market.yandex.ru/catalog--suveniry-i-podarki/54632/list?cpa=0&onstock=1&hid=91291&local-offers-first=0" class="section-gifts-list-wrap__item-link section-gifts-list-wrap__item-link-no btn" rel ="noopener" target="_blank" aria-label="Market">
                                 Перейти в магазин
                             </a>
                          </li>
                          <li class="section-gifts-list-wrap__item">
                              <img src="img/gifts/yandex.jpg" alt="">
                              <div class="text-title">Яндекс Станция, умная колонка с Алисой</div>
-                             <a href="https://yandex.ru/alice/station" class="section-gifts-list-wrap__item-link btn" rel ="noopener" target="_blank">
+                             <a href="https://yandex.ru/alice/station" class="section-gifts-list-wrap__item-link btn" rel ="noopener" target="_blank" aria-label="Yandex Alisa">
                                 Купить Станцию
                             </a>
                          </li>
@@ -243,56 +245,56 @@
                       <div id="rep" class="music-content tabcontent">
                         <div class="card" data-id="01">
                                 <h4 class="item-title">Пустите меня на танцпол <span>HammAli & Navai</span></h4>
-                                <audio controls preload="auto" src="./music/rep/HammAli_Navai_-_Pustite_menya_na_tancpol_54422844.mp3" class="product-audio" nodownload></audio>
+                                <audio controls preload="auto" src="music/rep/HammAli_Navai_-_Pustite_menya_na_tancpol_54422844.mp3" class="product-audio" nodownload></audio>
                             <div class="card-body">               
                                 <button data-cart type="button" class="btn">Добавить</button>
                             </div>
                         </div>  
                         <div class="card" data-id="02">
                             <h4 class="item-title">Сияй - <span>Ramil</span></h4>
-                            <audio controls preload="auto" src="./music/rep/Ramil_-_Siyajj_70551355.mp3" class="product-audio"></audio>
+                            <audio controls preload="auto" src="music/rep/Ramil_-_Siyajj_70551355.mp3" class="product-audio"></audio>
                         <div class="card-body">               
                             <button data-cart type="button" class="btn">Добавить</button>
                         </div>
                         </div> 
                     <div class="card" data-id="03">
                         <h4 class="item-title">Жить в кайф - <span>Макс Корж</span></h4>
-                        <audio controls preload="auto" src="./music/rep/Maks_Korzh_-_ZHit_v_kajjf_47828991.mp3" class="product-audio"></audio>
+                        <audio controls preload="auto" src="music/rep/Maks_Korzh_-_ZHit_v_kajjf_47828991.mp3" class="product-audio"></audio>
                     <div class="card-body">               
                         <button data-cart type="button" class="btn">Добавить</button>
                     </div>
                     </div> 
                     <div class="card" data-id="04">
                         <h4 class="item-title">Малый повзрослел - <span>Макс Корж</span></h4>
-                        <audio controls preload="auto" src="./music/rep/Maks_Korzh_-_Malyjj_povzroslel_48615996.mp3" class="product-audio"></audio>
+                        <audio controls preload="auto" src="music/rep/Maks_Korzh_-_Malyjj_povzroslel_48615996.mp3" class="product-audio"></audio>
                     <div class="card-body">               
                         <button data-cart type="button" class="btn">Добавить</button>
                     </div>
                     </div> 
                     <div class="card" data-id="05">
                         <h4 class="item-title">Выпускной -<span>Баста</span></h4>
-                        <audio controls preload="auto" src="./music/rep/Баста - Выпускной (Медлячок).mp3" class="product-audio"></audio>
+                        <audio controls preload="auto" src="music/rep/Баста - Выпускной (Медлячок).mp3" class="product-audio"></audio>
                     <div class="card-body">               
                         <button data-cart type="button" class="btn">Добавить</button>
                     </div>
                     </div> 
                     <div class="card" data-id="06">
                         <h4 class="item-title">Мокрые кросы<span> Тима Белорусских</span></h4>
-                        <audio controls preload="auto" src="./music/rep/Tima_Belorusskikh_-_Mokrye_krossy_58394454.mp3" class="product-audio"></audio>
+                        <audio controls preload="auto" src="music/rep/Tima_Belorusskikh_-_Mokrye_krossy_58394454.mp3" class="product-audio"></audio>
                     <div class="card-body">               
                         <button data-cart type="button" class="btn">Добавить</button>
                     </div>
                     </div> 
                     <div class="card" data-id="07">
                         <h4 class="item-title">Мокрые кросы <span>Тима Белорусских</span></h4>
-                        <audio controls preload="auto" src="./music/rep/Tima_Belorusskikh_-_Mokrye_krossy_58394454.mp3" class="product-audio"></audio>
+                        <audio controls preload="auto" src="music/rep/Tima_Belorusskikh_-_Mokrye_krossy_58394454.mp3" class="product-audio"></audio>
                     <div class="card-body">               
                         <button data-cart type="button" class="btn">Добавить</button>
                     </div>
                     </div> 
                     <div class="card" data-id="08">
                         <h4 class="item-title">Комета - <span>Jony</span></h4>
-                        <audio controls preload="auto" src="./music/rep/Jony - Комета (megapesni.com).mp3" class="product-audio"></audio>
+                        <audio controls preload="auto" src="music/rep/Jony - Комета (megapesni.com).mp3" class="product-audio"></audio>
                     <div class="card-body">               
                         <button data-cart type="button" class="btn">Добавить</button>
                     </div>
@@ -595,24 +597,24 @@
 
         <!-- Декор -->
         <div id="dekor"></div>
-        <section class="section-outer section-decor">
+        <section class="section-outer section-decor" style="background: url(img/decor/music_2.png)">
             <div class="section-inner">
                 <div class="section-decor-room">
                     <h2>Конструктор декора помещения</h2>
                     <div class="section-decor-room__wrap">
                         <div class="section-decor-room__wrap--left">
                             <div class="text-title">Выберите элемент декора</div>
-                            <a href="#" class="section-room__wrap--left-link" id="open_sharik">
+                            <a href="#" class="section-room__wrap--left-link" id="open_sharik" aria-label="Element">
                                 <img src="img/decor/icon/2.png" class="img-link" alt="">
                             </a>
                             <a href="#" class="close-img" id="close_sharik">Убрать</a>
 
-                            <a href="#" class="section-room__wrap--left-link" id="open_sharik_2">
+                            <a href="#" class="section-room__wrap--left-link" id="open_sharik_2" aria-label="Element">
                                 <img src="img/decor/icon/3.png" alt="">
                             </a>
                             <a href="#" class="close-img" id="close_sharik_2">Убрать</a>
 
-                            <a href="#" class="section-room__wrap--left-link" id="open_sharik_3">
+                            <a href="#" class="section-room__wrap--left-link" id="open_sharik_3"> 
                                 <img src="img/decor/icon/3.png" alt="">
                             </a>
                             <a href="#" class="close-img" id="close_sharik_3">Убрать</a>
@@ -689,7 +691,7 @@
                     <div class="section-save-list__music">
                         <div class="text-title">Моя музыка (Избранное)</div>
                         <div class="card-wrapper">
-                            <div class="card-item" data-id="02">
+                            <div class="card-item" data-id="01">
                                 <div class="card-item__top">
                                     <div class="card-item__img"></div>
                                 </div>
@@ -703,7 +705,7 @@
 
         <!-- Event - студии -->
         <div id="event"></div>
-        <section class="section-outer section-event">
+        <section class="section-outer section-event" style="background: url(img/event/event.png)">
             <div class="section-inner">
                 <div class="section-event-list">
                     <h2>Сертифицированные агентства и Event - студии</h2>
@@ -730,7 +732,6 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="list-wrapper">
                         <div class="list-wrapper__left">
                             <div class="text-title">Event - студии
@@ -805,7 +806,6 @@
                     <div class="text-сopyright">Все права защищены</div>
                     <div class="сopyright">&copy; 2021 "Яндекс Праздник"</div>
                 </div>
-
                 <div class="section-footer-navigation__docs">
                     <div class="text-title">Документы</div>
                     <div class="text" id="open_prava">
@@ -824,7 +824,6 @@
                                 </p>
                         </div>
                     </div>
-
                     <div class="text">
                         <a href="#" class="text-link" id="open_polzovatel">Пользовательское соглашение</a>
                     </div>
@@ -872,32 +871,30 @@
                             </form>
                         </div>
                     </div>
-
                 </div>
-
                 <div class="section-footer-navigation__website">
                      <div class="text-title">Навигация по сайту</div>
                      <div class="footer-navigation">
                         <ul class="footer-navigation__left">
                             <li class="footer-navigation__left-item">
-                                <a href="#games" class="footer-navigation__left-item__link">Подбор <br>развлечений</a>
+                                <a href="#games" class="footer-navigation__left-item__link scroll-to">Подбор <br>развлечений</a>
                             </li>
                             <li class="footer-navigation__left-item">
-                                <a href="#gifts" class="footer-navigation__left-item__link">Подарки</a>
+                                <a href="#gifts" class="footer-navigation__left-item__link scroll-to">Подарки</a>
                             </li>
                             <li class="footer-navigation__left-item">
-                                <a href="#music" class="footer-navigation__left-item__link">Подобрать музыку</a>
+                                <a href="#music" class="footer-navigation__left-item__link scroll-to">Подобрать музыку</a>
                             </li>
                         </ul>
                         <ul class="footer-navigation__right">
                             <li class="footer-navigation__right-item">
-                                <a href="#dekor" class="footer-navigation__right-item__link">Конструктор <br>декора</a>
+                                <a href="#dekor" class="footer-navigation__right-item__link scroll-to">Конструктор <br>декора</a>
                             </li>
                             <li class="footer-navigation__right-item">
-                                <a href="#save" class="footer-navigation__right-item__link">Моя подборка</a>
+                                <a href="#save" class="footer-navigation__right-item__link scroll-to">Моя подборка</a>
                             </li>
                             <li class="footer-navigation__right-item">
-                                <a href="#event" class="footer-navigation__right-item__link">Event - студии</a>
+                                <a href="#event" class="footer-navigation__right-item__link scroll-to">Event - студии</a>
                             </li>
                         </ul>
                      </div>
@@ -906,11 +903,12 @@
         </div>
     </footer>
     <!-- / Footer -->
+    <script src="./js/scroll.js"></script>
     <script src="./js/burger-menu.js"></script>
     <script src="./js/decor-modal.js"></script>
     <script src="./js/decor.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="/js/card-music.js"></script>
+    <script src="./js/card-music.js"></script>
     <script src="./js/tab.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/cart-games.js"></script>

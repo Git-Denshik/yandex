@@ -128,6 +128,17 @@ h1 {
 .ta-c {
     text-align: center;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
 // === / COMMON ===
 
 .main-navigation {
@@ -278,10 +289,6 @@ h1 {
 // === HERO IMAGE ===
 .section-hero-image {
 
-    @media(max-width:$breakpoint-sm-max) {
-        background: url(/img/mobile.png);
-    }
-
     .slide-image {
         background-color: rgba(4, 11, 60, 0.55);
     }
@@ -423,11 +430,11 @@ h1 {
 // === / HERO IMAGE ===
 
 // === GAMES ===
-.section-gifts {
-    background: url(../img/gifts/gifts.png);
+.section-games {
 
     .section-inner {
-        padding-top: $base;
+        padding-top: $base * 15;
+        padding-bottom: $base *25;
 
         @media (max-width: $breakpoint-sm-max) {
             padding-top: 0;
@@ -576,7 +583,12 @@ h1 {
 
 // === GIGTS ===
 .section-gifts {
+    background: url(../img/gifts/gifts.png);
+
     .section-inner {
+        padding-top: 0;
+        padding-bottom: $base * 15;
+
         @media(max-width:$breakpoint-md-max) {
             padding-bottom: $base * 10;
         }
@@ -839,7 +851,6 @@ h1 {
 
 // === DECOR ===
 .section-decor {
-    background: url(/img/decor/music_2.png);
 
     .section-inner {
         padding-top: $base * 7;
@@ -900,7 +911,7 @@ h1 {
 
             @media (max-width:$breakpoint-sm-max) {
                 flex-wrap: nowrap;
-                overflow: scroll;
+                overflow:auto;
             }
 
             a {
@@ -1336,7 +1347,6 @@ h1 {
 
 // === EVENT ===
 .section-event {
-    background: url(/img/event/event.png);
 
     .section-inner {
         padding-top: $base * 15;
@@ -1552,6 +1562,7 @@ h1 {
 
                 @media (max-width:$breakpoint-sm-max) {
                     height: $base * 100;
+                    border-radius: 0 0 $base * 2 $base * 2;
                 }
             }
         }
